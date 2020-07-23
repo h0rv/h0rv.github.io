@@ -6,28 +6,47 @@
     <meta charset="utf-8" />
     <title>Robby Horvath</title>
     <!-- styles -->
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+        integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    </link>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <!-- scripts -->
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="/script.js"></script>
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="wrapper">
-            <h1>Hello</h1>
-        </div>
-    </header>
 
-    <div class="site-content">
-        <div class="wrapper">
-            <p>hello</p>
+    <div class="pure-menu">
+        <div class="pure-menu pure-menu-horizontal">
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item pure-menu-selected">
+                    <a href="#" class="pure-menu-link">About</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="#" class="pure-menu-link">Projects</a>
+                </li>
+                <li class="pure-menu-item">Disabled</li>
+            </ul>
         </div>
     </div>
 
-    <footer class="site-footer">
-        <div class="wrapper">
+    <div class="content">
+        <div class="pure-g">
+            <div class="pure-u-1-3">
+                <h2 id="name">Robby Horvath</h2>
+                <img id="avatar" src="imgs\xboxgamerpic.jpg" alt="avatar" />
+            </div>
+            <div id="bio" class="pure-u-3-5">
+                <p id="bio-text">
+                    Hello, my name is Robert (Robby) Horvath. I am from Scranton, Pennsylvania but I am currently a
+                    student at the University of Pittsburgh. I am pursing a degree
+                    in Computer Science with a minor in Mathematics.
+                </p>
+            </div>
         </div>
-    </footer>
+    </div>
+
 </body>
 
 </html>

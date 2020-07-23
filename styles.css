@@ -1,0 +1,34 @@
+body {
+    margin: 10vmin;
+    overflow: hidden;
+    color: #f47362;
+}
+
+ h1, h2, h3, h4, h5, h6 {
+    font-family: 'Archivo Black', sans-serif;
+
+}
+
+.content {
+    margin: auto;
+    background-color: #674b7c;
+    padding: 2.5%;
+    height: fit-content;
+    border-radius: 5vmin;
+    text-align: center;
+    font-family: 'Judson', serif;
+}
+
+#name {
+    width: 100%;
+}
+
+img {
+    width: 50%;
+    border-radius: 100%;
+}
+
+#bio-text {
+    padding: 5%;
+    text-align: start;
+}

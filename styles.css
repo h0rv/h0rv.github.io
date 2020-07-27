@@ -1,34 +1,68 @@
 body {
-    margin: 10vmin;
-    overflow: hidden;
-    color: #f47362;
+    color: #FFFFFF;
 }
 
- h1, h2, h3, h4, h5, h6 {
-    font-family: 'Archivo Black', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+font-family: 'Noto Sans SC',
+sans-serif;
+}
 
+p {
+   font-family: 'Roboto',
+   sans-serif;
+   line-height: 125%;
 }
 
 .content {
-    margin: auto;
-    background-color: #674b7c;
-    padding: 2.5%;
+    width: 100%;
     height: fit-content;
-    border-radius: 5vmin;
+    margin: auto;
+    background-color: #7395ae;
     text-align: center;
-    font-family: 'Judson', serif;
 }
 
 #name {
     width: 100%;
 }
 
-img {
+#avatar {
     width: 50%;
     border-radius: 100%;
+}
+
+#bio {
+    margin: auto;
 }
 
 #bio-text {
     padding: 5%;
     text-align: start;
+}
+
+.links {
+    margin-bottom: 2.5%;
+}
+
+.link-svgs {
+    width: 32px;
+    height: 32px;
+}
+
+.skills {
+        padding: 2.5%;
+        text-align: center;
+        background-color: #b1a296;
+        margin: auto;
+        width: 100%;
+        height: fit-content;
+        
+}
+ 
+hr {
+    width: 75%;
 }

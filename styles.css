@@ -3,13 +3,14 @@ body {
     color: #C0C3C4;
     font-family: 'Fira Sans Condensed',
         sans-serif;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5%;
+    font-size: 3em;
+    width: 100%;
 }
 
-.intro {
-    font-size: 3vw;
+.container {
+    margin-top: 4em;
+    margin-left: 3em;
+    margin-right: 3em;
 }
 
 #name {
@@ -18,8 +19,6 @@ body {
 
 .contact-container {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 #contact {
@@ -40,7 +39,7 @@ body {
 }
 
 .resume-container {
-    margin-top: 20px;
+    margin-top: 1em;
     text-align: center;
     width: 100%;
 }
@@ -53,5 +52,25 @@ a.resume {
     text-align: center;
     display: inline;
     padding: 4px;
-    font-size: 2.5vw;
+    font-size: .5em;
+    color: #C0C3C4;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@media screen and (max-device-width: 480px) {
+    body {
+        font-size: 1.5em;
+        margin-top: 9em;
+    }
+    .container {
+            margin-left: 1em;
+            margin-right: 1em;
+    }
+    a.resume {
+        font-size: .75em;
+    }
 }

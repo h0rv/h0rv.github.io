@@ -1,2 +1,2 @@
-# Personal Website (Under Construction)
-[robbyhorvath.me](https://robbyhorvath.me/)
+# Personal Website
+[robbyhorvath.me](https://www.robbyhorvath.me/)

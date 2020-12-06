@@ -1,6 +1,6 @@
 body {
-    background: #1C1C25;
-    color: #C0C3C4;
+    background: #282a36;
+    color: #f8f8f2;
     font-family: 'Fira Sans Condensed',
         sans-serif;
     font-size: 3em;
@@ -14,7 +14,7 @@ body {
 }
 
 #name {
-    color: #6F51DB;
+    color: #bd93f9;
 }
 
 .contact-container {

@@ -47,13 +47,13 @@ body {
 a.resume {
     border: 2px;
     border-style: solid;
-    border-color: #6F51DB;
+    border-color: #bd93f9;
     border-radius: 8px;
     text-align: center;
     display: inline;
     padding: 4px;
+    color: #f8f8f2;
     font-size: .5em;
-    color: #C0C3C4;
     text-decoration: none;
 }
 

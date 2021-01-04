@@ -21,10 +21,10 @@ class Particle {
 	constructor(x, y) {
 		this.x = x;
 		this.y = y;
-		this.radius = Math.random() * 10 + 5;
+		this.radius = Math.random() * 10 + 7.5;
 		this.color = colorsArr[Math.floor(Math.random() * colorsArr.length)];
 		this.weight = 0.15;
-		this.directionX = Math.random() * 0.5 + 0.1;
+		this.directionX = Math.random() * 0.75 + 0.25;
 		this.directionX = this.directionX * (Math.random() < 0.5 ? -1 : 1);
 	}
 	update() {
@@ -43,12 +43,12 @@ class Particle {
 
 		// Check for top div collision
 		if (
-			this.x + this.radius > div.x &&
-			this.x - this.radius < div.x + div.width &&
+			this.x > div.x &&
+			this.x < div.x + div.width &&
 			this.y + this.radius > div.y &&
-			this.y < div.y + 10
+			this.y + this.radius < div.y + 10
 		) {
-			this.y -= 3;
+			this.y -= 2;
 			this.weight *= -0.75;
 		}
 

@@ -1,49 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="eng">
+	<head>
+		<meta charset="utf-8" />
+		<title>Robby Horvath</title>
+		<link
+			rel="icon"
+			href="https://icon-library.com/images/white-profile-icon/white-profile-icon-6.jpg"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="keywords" content="Robby Horvath, Robert Horvath, Resume" />
+		<meta name="description" content="Robby Horvath's Personal Website" />
+		<meta name="author" content="Robby Horvath" />
 
-<head>
-    <meta charset="utf-8">
-    <title>Robby Horvath</title>
-    <link rel="icon" href="https://icon-library.com/images/white-profile-icon/white-profile-icon-6.jpg">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="Robby Horvath, Robert Horvath, Resume">
-    <meta name="description" content="Robby Horvath's Personal Website">
-    <meta name="author" content="Robby Horvath">
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
 
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <div class="container">
-        <div class="intro-container">
-            <p class="intro">Hello, my name is <b id="name">Robby Horvath</b>! I am a Computer Science undergraduate
-                student
-                at
-                the
-                University of Pittsburgh.</p>
-        </div>
-        <div class="contact-container">
-            <ul id="contact">
-                <li>
-                    <a href="https://github.com/robbyhorvath" target="_blank"><img class="icons"
-                            src="imgs/github.svg" /></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/robby-horvath/" target="_blank"><img class="icons"
-                            src="imgs/linkedin.svg" /></a>
-                </li>
-                <li>
-                    <a href="mailto:horvathrobby@gmail.com"><img class="icons" src="imgs/email.svg" /></a>
-                </li>
-            </ul>
-            <div class="resume-container">
-                <a class="resume" href="imgs/resume.pdf" target="_blank">Resume</a>
-            </div>
-        </div>
-    </div>
-    <script src="script.js"></script>
-
-</body>
-
+	<body>
+		<canvas id="bg-canvas"></canvas>
+		<div id="content">
+			<div class="intro-container">
+				<p class="intro">
+					Hello, my name is <b id="name">Robby Horvath</b>! I am a
+					Computer Science undergraduate student at the University of
+					Pittsburgh.
+				</p>
+			</div>
+			<div class="contact-container">
+				<ul id="contact">
+					<li>
+						<a
+							href="https://github.com/robbyhorvath"
+							target="_blank"
+							><img class="icons" src="imgs/github.svg"
+						/></a>
+					</li>
+					<li>
+						<a
+							href="https://www.linkedin.com/in/robby-horvath/"
+							target="_blank"
+							><img class="icons" src="imgs/linkedin.svg"
+						/></a>
+					</li>
+					<li>
+						<a href="mailto:horvathrobby@gmail.com"
+							><img class="icons" src="imgs/email.svg"
+						/></a>
+					</li>
+				</ul>
+				<div class="resume-container">
+					<a class="resume" href="imgs/resume.pdf" target="_blank"
+						>Resume</a
+					>
+				</div>
+			</div>
+		</div>
+		<button id="stop">[S] or Click to Stop Animation</button>
+		<script src="scripts.js"></script>
+	</body>
 </html>

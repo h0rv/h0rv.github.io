@@ -21,7 +21,7 @@ class Particle {
 	constructor(x, y) {
 		this.x = x;
 		this.y = y;
-		this.size = Math.random() * 10 + 5;
+		this.radius = Math.random() * 10 + 5;
 		this.color = colorsArr[Math.floor(Math.random() * colorsArr.length)];
 		this.weight = 0.15;
 		this.directionX = Math.random() * 0.5 + 0.1;
@@ -30,12 +30,12 @@ class Particle {
 	update() {
 		// Check for out of bounds
 		if (
-			this.y - this.size > canvas.height ||
-			this.x + this.size < 0 ||
-			this.x - this.size > canvas.width
+			this.y - this.radius > canvas.height ||
+			this.x + this.radius < 0 ||
+			this.x - this.radius > canvas.width
 		) {
 			this.x = Math.random() * canvas.width;
-			this.y = 0 - this.size;
+			this.y = 0 - this.radius;
 			this.color =
 				colorsArr[Math.floor(Math.random() * colorsArr.length)];
 			this.weight = 0.15;
@@ -43,9 +43,9 @@ class Particle {
 
 		// Check for top div collision
 		if (
-			this.x > div.x &&
-			this.x < div.x + div.width &&
-			this.y + this.size > div.y &&
+			this.x + this.radius > div.x &&
+			this.x - this.radius < div.x + div.width &&
+			this.y + this.radius > div.y &&
 			this.y < div.y + 10
 		) {
 			this.y -= 3;
@@ -54,33 +54,33 @@ class Particle {
 
 		// Check for left side div collision
 		if (
-			this.y + this.size > div.y + 10 &&
-			this.y < div.y + div.height &&
-			this.x + this.size > div.x &&
-			this.x < div.x + 10
+			this.y + this.radius > div.y + 10 &&
+			this.y - this.radius < div.y + div.height &&
+			this.x + this.radius > div.x &&
+			this.x - this.radius < div.x + 10
 		) {
 			this.x -= 3;
 			this.directionX *= -1;
 		}
 		// Check for right side div collision
 		if (
-			this.y + this.size > div.y + 10 &&
-			this.y < div.y + div.height &&
+			this.y + this.radius > div.y + 10 &&
+			this.y - this.radius < div.y + div.height &&
 			this.x > div.x + div.width - 10 &&
-			this.x - this.size < div.x + div.width
+			this.x - this.radius < div.x + div.width
 		) {
 			this.x += 3;
 			this.directionX *= -1;
 		}
 
-		this.weight += 0.005;
+		this.weight += 0.01;
 		this.x += this.directionX;
 		this.y += this.weight;
 	}
 	draw() {
 		ctx.fillStyle = this.color;
 		ctx.beginPath();
-		ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+		ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
 		ctx.closePath();
 		ctx.fill();
 	}

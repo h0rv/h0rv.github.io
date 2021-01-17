@@ -3,7 +3,7 @@ let ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-let numOfParticles = Math.floor(canvas.width * 0.05);
+const numOfParticles = Math.floor(canvas.width * 0.025);
 let particlesArr = [];
 const colorsArr = [
 	'#8be9fd',

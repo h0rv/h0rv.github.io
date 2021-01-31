@@ -3,6 +3,7 @@ let ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+const gravityConstant = .25;
 const numOfParticles = Math.floor(canvas.width * 0.025);
 let particlesArr = [];
 const colorsArr = [
@@ -23,10 +24,11 @@ class Particle {
 		this.y = y;
 		this.radius = Math.random() * 10 + 7.5;
 		this.color = colorsArr[Math.floor(Math.random() * colorsArr.length)];
-		this.weight = 0.15;
-		this.directionX = Math.random() * 0.75 + 0.25;
+		this.gravity = gravityConstant;
+		this.directionX = Math.random() * 0.75 + 0.5;
 		this.directionX = this.directionX * (Math.random() < 0.5 ? -1 : 1);
 	}
+
 	update() {
 		// Check for out of bounds
 		if (
@@ -38,7 +40,7 @@ class Particle {
 			this.y = 0 - this.radius;
 			this.color =
 				colorsArr[Math.floor(Math.random() * colorsArr.length)];
-			this.weight = 0.15;
+			this.gravity = gravityConstant;
 		}
 
 		// Check for top div collision
@@ -49,7 +51,7 @@ class Particle {
 			this.y + this.radius < div.y + 10
 		) {
 			this.y -= 2;
-			this.weight *= -0.75;
+			this.gravity *= -.9;
 		}
 
 		// Check for left side div collision
@@ -73,10 +75,11 @@ class Particle {
 			this.directionX *= -1;
 		}
 
-		this.weight += 0.01;
+		this.gravity += 0.075;
 		this.x += this.directionX;
-		this.y += this.weight;
+		this.y += this.gravity;
 	}
+
 	draw() {
 		ctx.fillStyle = this.color;
 		ctx.beginPath();

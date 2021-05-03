@@ -4,7 +4,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 const gravityConstant = .25;
-const numOfParticles = Math.floor(canvas.width * 0.025);
+const numOfParticles = Math.floor(canvas.width * 0.015);
 let particlesArr = [];
 const colorsArr = [
 	'#8be9fd',

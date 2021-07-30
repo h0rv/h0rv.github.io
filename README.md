@@ -1,2 +1,2 @@
 # Personal Website
-[robbyhorvath.me](https://www.robbyhorvath.me/)
+[https://robbyhorvath.github.io/](https://robbyhorvath.github.io/)

@@ -5,7 +5,7 @@ framed: true
 draft: false
 ---
 
-__Hi, I am Robby.__ Welcome to my website and home on the web to where I post my thoughts,
+__Hi, I am Robby.__ Welcome to my website where I post my thoughts,
 media I enjoyed, and other things no one will care about.
 
 My technological interests include open-source, privacy, security, Linux, NeoVim, and systems.

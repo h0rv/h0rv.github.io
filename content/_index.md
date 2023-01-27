@@ -5,11 +5,12 @@ framed: true
 draft: false
 ---
 
-__Hi, I am Robby.__ Welcome to my website where I post my thoughts,
-media I enjoyed, and other things no one will care about.
+__Hi, I'm Robby and I am a software engineer__ – and welcome to my website!
+Here I post my thoughts, media I enjoy, and other things no one will care about.
 
-My technological interests include open-source, privacy, security, Linux, NeoVim, and systems.
-More broadly, I am interested in technology's effects on society (probably social media),
-running, and science-fiction.
+My technological interests include open-source, Linux, NeoVim, privacy, security,
+compilers, language design, cloud, and systems.
+More broadly, I am interested in technology's effects on society, digital minimalism,
+productivity, and running.
 
-![](index.jpg)
+![Me](index.jpg)

@@ -13,4 +13,6 @@ compilers, language design, cloud, and systems.
 More broadly, I am interested in technology's effects on society, digital minimalism,
 productivity, and running.
 
+[RSS Feed](https://h0rv.github.io/posts/index.xml) 
+
 ![Me](index.jpg)

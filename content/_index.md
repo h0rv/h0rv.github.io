@@ -15,4 +15,6 @@ productivity, and running.
 
 [RSS Feed](https://h0rv.github.io/posts/index.xml) 
 
+Email: rhorv _at_ proton _dot_ me
+
 ![Me](index.jpg)

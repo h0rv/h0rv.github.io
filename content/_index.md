@@ -17,4 +17,3 @@ productivity, and running.
 
 Email: rhorv _at_ proton _dot_ me
 
-![Me](index.jpg)

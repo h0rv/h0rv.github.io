@@ -89,6 +89,6 @@ logoHomeLink = "/"
 
 [languages.en.menu]
 [[languages.en.menu.main]]
-identifier = "Library"
-name = "Library"
-url = "/library"
+# identifier = "Library"
+# name = "Library"
+# url = "/library"

@@ -3,7 +3,7 @@ languageCode = "en-us"
 # Add it only if you keep the theme in the `themes` directory.
 # Remove it if you use the theme as a remote Hugo Module.
 theme = "terminal"
-paginate = 5
+paginate = 10
 
 [params]
 # dir name of your main content (default is `content/posts`).
@@ -11,7 +11,7 @@ paginate = 5
 contentTypeName = "posts"
 
 # ["orange", "blue", "red", "green", "pink"]
-themeColor = "green"
+themeColor = "pink"
 
 # if you set this to 0, only submenu trigger will be visible
 showMenuItems = 2
@@ -41,18 +41,18 @@ showLastUpdated = false
 # updatedDatePrefix = "Updated"
 
 # set all headings to their default size (depending on browser settings)
-# oneHeadingSize = true # default
+oneHeadingSize = false # default
 
 # whether to show a page's estimated reading time
 # readingTime = false # default
 
 # whether to show a table of contents
 # can be overridden in a page's front-matter
-# Toc = true 
+Toc = true 
 
 # set title for the table of contents
 # can be overridden in a page's front-matter
-# TocTitle = "Table of Contents" # default
+TocTitle = "Table of Contents" # default
 
 
 # [params.twitter]

@@ -1,4 +1,5 @@
 baseurl = "https://h0rv.github.io/"
+theme = "holy"
 title = "ℜ𝔬𝔟𝔟𝔶"
 author = "Robby"
 copyright = ""

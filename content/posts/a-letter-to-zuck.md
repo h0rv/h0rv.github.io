@@ -1,12 +1,8 @@
 ---
 title: "A Letter to Zuck"
 date: 2023-01-26
-author: "Robby"
-cover: ""
-description: " "
 tags: ["digital minimalism", "social media", "technology"]
 keywords: ["digital minimalism", "social media", "technology"]
-readingTime: false
 draft: false
 ---
 

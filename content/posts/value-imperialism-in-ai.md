@@ -2,11 +2,8 @@
 title: "Value Imperialism in the Future of Artificial Intelligence"
 date: 2023-10-27
 author: "Robby"
-cover: ""
-description: " "
 tags: ["technology", "ai"]
 keywords: ["technology", "ai"]
-readingTime: false
 draft: false
 ---
 

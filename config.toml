@@ -1,33 +1,31 @@
+theme = "hugo-tania"
+
 baseurl = "https://h0rv.github.io/"
-theme = "holy"
 title = "ℜ𝔬𝔟𝔟𝔶"
 author = "Robby"
-copyright = ""
 
 paginate = 10
 
-languageCode = "en"
-DefaultContentLanguage = "en"
-
-enableInlineShortcodes = false
-
 [params]
-  copyright = "© h0rv"
+  enableFootnotes = true
+  [params.colorScheme]
+    toggle = true
+    default = "auto"
 
 [menu]
+  [[menu.header]]
+    name = "Posts"
+    url = "/posts/"
+  [[menu.footer]]
+    name = "RSS"
+    url = "/index.xml"
 
-  # [[menu.main]]
-  #   identifier = "about"
-  #   name = "About"
-  #   url = "/about/"
-  #   weight = 10
+[markup]
+  [markup.highlight]
+    noClasses = false
+    lineNos = true
+  [markup.goldmark.renderer]
+    unsafe = true
 
-[taxonomies]
-category = "categories"
-tag = "tags"
-series = "series"
-
-[privacy]
-
-[services]
-
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

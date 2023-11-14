@@ -6,7 +6,7 @@ keywords: ["digital minimalism", "technology", "apple vision", "spatial computin
 draft: false
 ---
 
-![Wireheads are Coming](/img/wireheads-are-coming.jpg)
+![Wireheads are Coming](./img/wireheads-are-coming.jpg)
 
 The announcement of the Apple Vision Pro yesterday left me very conflicted. On one hand, the productivity gains that can be yielded by replacing the standard desk and monitor setups for myself and many others (and being able to easily travel with such large "screen space") is very exciting. On the other, the dystopic future that was once predicted in 80's science fiction is one step closer to becoming realized.
 

@@ -1,33 +1,20 @@
 ---
-title: "About h0rv"
+title: "About"
+Author: Robby
 date: 2024-02-27
-readingTime: false
 ---
 
-> Last edited: March 18, 2024
+> Last edited: March 25, 2024
 
-**Hi, I'm Robby and welcome to my piece of the web!**
+**Hi, I am Robby!** I am a software engineer and digital minimalist.
 
-I am a software engineer, runner, and digital minimalist.
-
-Here are some of the technologies I am interested in:
-
-  - Open-source software (OSS)
-  - AI
-    - Large Language Models (LLMs) / Generative AI (GenAI)
-    - AI Engineering
-  - Infrastructure + Cloud
-  - Distributed Systems
-  - GNU/Linux
-  - NeoVim
-  - Privacy
-  - Security
-  - Compilers
-    - Programming Language Design
-
+I am passionate about open souce, infrastructure, and AI.
 Additionally, I care deeply about the effects that technologies have on society, in particular:
-addictive technologies, AI, and the (near?) future with AGI.
+addictive technologies, detrimental consquences of centralization, and AI.
 
-I don't have social media anymore (except LinkedIn, unfortunately), but you can contact me at:
+I don't have any socials but you can contact me at:
 
-  > rhorv _at_ proton _dot_ me
+```sh
+# Email
+echo cmhvcnZAcHJvdG9uLm1lCg== | base64 -d
+```

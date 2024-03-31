@@ -10,12 +10,12 @@ d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.
 &lt;/a>
 1. Installing KOReader
 &lt;/h2>
+&lt;p>This thread has the installation information: &lt;a href="https://www.mobileread.com/forums/showthread.php?t=314220">link&lt;/a>.&lt;/p>
 &lt;ol>
-&lt;li>This thread has the installation information: &lt;a href="https://www.mobileread.com/forums/showthread.php?t=314220">link&lt;/a>.
-1. Search for &amp;ldquo;One-Click Kobo Packages&amp;rdquo;, and download the desired package zip (I just did KOReader and Plato)
-2. Search for your OS (&amp;ldquo;Windows&amp;rdquo;, &amp;ldquo;macOS&amp;rdquo;, or &amp;ldquo;Linux&amp;rdquo;) and download the &amp;ldquo;install script archive&amp;rdquo; and unzip it in the same folder as the package zip.
-3. Run &lt;code>./install.sh&lt;/code>; follow any prompts
-4. Safely eject the device, reboot, and profit!&lt;/li>
+&lt;li>Search for &amp;ldquo;One-Click Kobo Packages&amp;rdquo;, and download the desired package zip (I just did KOReader and Plato)&lt;/li>
+&lt;li>Search for your OS (&amp;ldquo;Windows&amp;rdquo;, &amp;ldquo;macOS&amp;rdquo;, or &amp;ldquo;Linux&amp;rdquo;) and download the &amp;ldquo;install script archive&amp;rdquo; and unzip it in the same folder as the package zip.&lt;/li>
+&lt;li>Run &lt;code>./install.sh&lt;/code>; follow any prompts&lt;/li>
+&lt;li>Safely eject the device, reboot, and profit!&lt;/li>
 &lt;/ol>
 &lt;h2 id="2-configuring-ssh">
 &lt;a href="#2-configuring-ssh" class="anchor">

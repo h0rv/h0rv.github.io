@@ -11,13 +11,12 @@ d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.
 1. Installing KOReader
 &lt;/h2>
 &lt;ol>
-&lt;li>This thread has the installation information: &lt;a href="https://www.mobileread.com/forums/showthread.php?t=314220">link&lt;/a>.&lt;/li>
+&lt;li>This thread has the installation information: &lt;a href="https://www.mobileread.com/forums/showthread.php?t=314220">link&lt;/a>.
+1. Search for &amp;ldquo;One-Click Kobo Packages&amp;rdquo;, and download the desired package zip (I just did KOReader and Plato)
+2. Search for your OS (&amp;ldquo;Windows&amp;rdquo;, &amp;ldquo;macOS&amp;rdquo;, or &amp;ldquo;Linux&amp;rdquo;) and download the &amp;ldquo;install script archive&amp;rdquo; and unzip it in the same folder as the package zip.
+3. Run &lt;code>./install.sh&lt;/code>; follow any prompts
+4. Safely eject the device, reboot, and profit!&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>1. Search for &amp;quot;One-Click Kobo Packages&amp;quot;, and download the desired package zip (I just did KOReader and Plato)
-2. Search for your OS (&amp;quot;Windows&amp;quot;, &amp;quot;macOS&amp;quot;, or &amp;quot;Linux&amp;quot;) and download the &amp;quot;install script archive&amp;quot; and unzip it in the same folder as the package zip.
-3. Run `./install.sh`; follow any prompts
-4. Safely eject the device, reboot, and profit!
-&lt;/code>&lt;/pre>
 &lt;h2 id="2-configuring-ssh">
 &lt;a href="#2-configuring-ssh" class="anchor">
 &lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
@@ -30,19 +29,47 @@ d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.
 &lt;/h2>
 &lt;ol>
 &lt;li>Plug in your device via USB and mount it (probably done automatically)&lt;/li>
-&lt;li>Copy in your public RSA (non-RSA might not work, but did not confirm) SSH key into &lt;code>&amp;lt;Full Path to Reader&amp;gt;/KOBOeReader/.adds/koreader/settings/SSH/authorized_keys&lt;/code>. For reference:&lt;/li>
+&lt;li>Copy in your public RSA (non-RSA might not work, but did not confirm) SSH key into:&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>- My full path on Linux looks like: `/run/media/horv/KOBOeReader/.adds/koreader/settings/SSH/authorized_keys`
-- My copy command looks like: ` cp ~/.ssh/id_rsa.pub /run/media/horv/KOBOeReader/.adds/koreader/settings/SSH/authorized_keys`
-&lt;/code>&lt;/pre>
-&lt;ol start="3">
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">&amp;lt;Full Path to Reader&amp;gt;/KOBOeReader/.adds/koreader/settings/SSH/authorized_keys&lt;span class="sb">`&lt;/span>. For reference:
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>For reference:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># My full path on Linux looks like:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/run/media/horv/KOBOeReader/.adds/koreader/settings/SSH/authorized_keys
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># My copy command looks like:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">cp ~/.ssh/id_rsa.pub /run/media/horv/KOBOeReader/.adds/koreader/settings/SSH/authorized_keys
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="3">
 &lt;li>Safely eject the device&lt;/li>
 &lt;li>SSH into device following [KOReader docs](Connect to the e-reader via SSH)&lt;/li>
 &lt;/ol>
 &lt;ul>
-&lt;li>Transferring files via SSH: &lt;code>scp -P 2222 &amp;lt;Local File Path&amp;gt; root@&amp;lt;Your Kobo IP&amp;gt;:&amp;lt;Destination Path on Kobo&amp;gt;&lt;/code>&lt;/li>
+&lt;li>Transferring files via SSH:&lt;/li>
 &lt;/ul>
-&lt;h2 id="3-installing-syncthing">
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">scp -P &lt;span class="m">2222&lt;/span> &amp;lt;Local File Path&amp;gt; root@&amp;lt;Your Kobo IP&amp;gt;:&amp;lt;Destination Path on Kobo&amp;gt;&lt;span class="sb">`&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="3-installing-syncthing">
 &lt;a href="#3-installing-syncthing" class="anchor">
 &lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
 &lt;path fill-rule="evenodd"
@@ -90,8 +117,9 @@ d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.
 &lt;/ol>
 &lt;p>/mnt/onboard/.adds/syncthing&lt;/p>
 &lt;ol start="7">
-&lt;li>Open &lt;code>syncthing&lt;/code> via a browser by going to: &lt;code>http://&amp;lt;Your Kobo IP&amp;gt;:8384/&lt;/code> (assuming default &lt;code>syncthing&lt;/code> port is set)&lt;/li>
-&lt;li>Add username and password to Syncthing&lt;/li>
+&lt;li>Open &lt;code>syncthing&lt;/code> via a browser by going to:
+- [&lt;code>http://&amp;lt;Your Kobo IP&amp;gt;:8384/&lt;/code>](http://&lt;Your Kobo IP>:8384/) (assuming default &lt;code>syncthing&lt;/code> port is set)&lt;/li>
+&lt;li>For security, add a username and password to Syncthing&lt;/li>
 &lt;li>Search &amp;ldquo;figure out how to start it&amp;rdquo; in &lt;a href="https://anarc.at/hardware/tablet/kobo-clara-hd">&amp;ldquo;Hacking my Kobo Clara HD&amp;rdquo;&lt;/a> for several methods on how to start Syncthing on the device&lt;/li>
 &lt;/ol></description></item><item><title>Value Imperialism in the Future of Artificial Intelligence</title><link>https://h0rv.github.io/posts/value-imperialism-in-ai/</link><pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate><author>Robby</author><guid>https://h0rv.github.io/posts/value-imperialism-in-ai/</guid><description>
 &lt;blockquote>

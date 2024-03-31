@@ -17,6 +17,9 @@ paginate = 10
     name = "About"
     url = "/about/"
   [[menu.header]]
+    name = "Mediashelf"
+    url = "/mediashelf/"
+  [[menu.header]]
     name = "Board"
     url = "/board/"
   [[menu.header]]

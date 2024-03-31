@@ -6,6 +6,5 @@ cover: ""
 description: " "
 tags: ["education", "personal"]
 keywords: ["education", "personal"]
-readingTime: false
 draft: true
 ---

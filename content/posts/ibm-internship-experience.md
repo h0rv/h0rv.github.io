@@ -3,7 +3,6 @@ title: "IBM Cloud Internship Experience"
 date: 2023-11-08
 author: "Robby"
 tags: ["technology", "career"]
-keywords: ["technology", "career"]
 draft: true
 ---
 

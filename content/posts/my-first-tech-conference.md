@@ -6,7 +6,6 @@ cover: ""
 description: " "
 tags: ["technology", "open source", "career"]
 keywords: ["technology", "open source", "career"]
-readingTime: false
 draft: true
 ---
 

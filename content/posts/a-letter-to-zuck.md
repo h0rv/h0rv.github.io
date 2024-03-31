@@ -2,7 +2,6 @@
 title: "A Letter to Zuck"
 date: 2023-01-26
 tags: ["digital minimalism", "social media", "technology"]
-keywords: ["digital minimalism", "social media", "technology"]
 draft: false
 ---
 

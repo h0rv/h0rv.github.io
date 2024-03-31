@@ -1,5 +1,5 @@
 ---
-title: "Hacking my Kobo Clara HD in 204"
+title: "Hacking my Kobo Clara HD in 2024"
 date: 2024-03-31
 author: "Robby"
 tags: ["ereader", "kobo", "hacking", "reading", "offline"]

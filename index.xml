@@ -1,4 +1,99 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ℜ𝔬𝔟𝔟𝔶</title><link>https://h0rv.github.io/</link><description>Recent content on ℜ𝔬𝔟𝔟𝔶</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 31 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://h0rv.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Value Imperialism in the Future of Artificial Intelligence</title><link>https://h0rv.github.io/posts/value-imperialism-in-ai/</link><pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate><author>Robby</author><guid>https://h0rv.github.io/posts/value-imperialism-in-ai/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ℜ𝔬𝔟𝔟𝔶</title><link>https://h0rv.github.io/</link><description>Recent content on ℜ𝔬𝔟𝔟𝔶</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 31 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://h0rv.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Hacking my Kobo Clara HD in 204</title><link>https://h0rv.github.io/posts/hacking-kobo-clara-hd/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><author>Robby</author><guid>https://h0rv.github.io/posts/hacking-kobo-clara-hd/</guid><description>
+&lt;p>This post is an extension of the great tutorial &lt;a href="https://anarc.at/hardware/tablet/kobo-clara-hd">&amp;ldquo;Hacking my Kobo Clara HD&amp;rdquo;&lt;/a>, with the some extra details and clarifications from my experience.&lt;/p>
+&lt;h2 id="1-installing-koreader">
+&lt;a href="#1-installing-koreader" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+1. Installing KOReader
+&lt;/h2>
+&lt;ol>
+&lt;li>This thread has the installation information: &lt;a href="https://www.mobileread.com/forums/showthread.php?t=314220">link&lt;/a>.&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code>1. Search for &amp;quot;One-Click Kobo Packages&amp;quot;, and download the desired package zip (I just did KOReader and Plato)
+2. Search for your OS (&amp;quot;Windows&amp;quot;, &amp;quot;macOS&amp;quot;, or &amp;quot;Linux&amp;quot;) and download the &amp;quot;install script archive&amp;quot; and unzip it in the same folder as the package zip.
+3. Run `./install.sh`; follow any prompts
+4. Safely eject the device, reboot, and profit!
+&lt;/code>&lt;/pre>
+&lt;h2 id="2-configuring-ssh">
+&lt;a href="#2-configuring-ssh" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+2. Configuring SSH
+&lt;/h2>
+&lt;ol>
+&lt;li>Plug in your device via USB and mount it (probably done automatically)&lt;/li>
+&lt;li>Copy in your public RSA (non-RSA might not work, but did not confirm) SSH key into &lt;code>&amp;lt;Full Path to Reader&amp;gt;/KOBOeReader/.adds/koreader/settings/SSH/authorized_keys&lt;/code>. For reference:&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code>- My full path on Linux looks like: `/run/media/horv/KOBOeReader/.adds/koreader/settings/SSH/authorized_keys`
+- My copy command looks like: ` cp ~/.ssh/id_rsa.pub /run/media/horv/KOBOeReader/.adds/koreader/settings/SSH/authorized_keys`
+&lt;/code>&lt;/pre>
+&lt;ol start="3">
+&lt;li>Safely eject the device&lt;/li>
+&lt;li>SSH into device following [KOReader docs](Connect to the e-reader via SSH)&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>Transferring files via SSH: &lt;code>scp -P 2222 &amp;lt;Local File Path&amp;gt; root@&amp;lt;Your Kobo IP&amp;gt;:&amp;lt;Destination Path on Kobo&amp;gt;&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h2 id="3-installing-syncthing">
+&lt;a href="#3-installing-syncthing" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+3. Installing Syncthing
+&lt;/h2>
+&lt;ol>
+&lt;li>Install latest ARM binary (32-bit for Kobo Clara HD)&lt;/li>
+&lt;li>SSH into device (see step 2)&lt;/li>
+&lt;li>Make Syncthing config directory: &lt;code>mkdir -p ~/.config/syncthing&lt;/code>&lt;/li>
+&lt;li>Add config:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s1">&amp;#39;&amp;lt;configuration version=&amp;#34;18&amp;#34;&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s1"> &amp;lt;gui enabled=&amp;#34;true&amp;#34; tls=&amp;#34;false&amp;#34; debugging=&amp;#34;false&amp;#34;&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s1"> &amp;lt;address&amp;gt;0.0.0.0:8384&amp;lt;/address&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s1"> &amp;lt;/gui&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s1">&amp;lt;/configuration&amp;gt;&amp;#39;&lt;/span> &amp;gt; ~/.config/syncthing/config.xml
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="5">
+&lt;li>Copy a valid certificate authority (&lt;code>ca-certificates.crt&lt;/code>) to device from your own. For me it was:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">scp -P &lt;span class="m">2222&lt;/span> /etc/ssl/certs/ca-certificates.crt root@&amp;lt;Your Kobo IP&amp;gt;:/etc/ssl/certs/
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="6">
+&lt;li>Run &lt;code>syncthing&lt;/code> over SSH:&lt;/li>
+&lt;/ol>
+&lt;p>/mnt/onboard/.adds/syncthing&lt;/p>
+&lt;ol start="7">
+&lt;li>Open &lt;code>syncthing&lt;/code> via a browser by going to: &lt;code>http://&amp;lt;Your Kobo IP&amp;gt;:8384/&lt;/code> (assuming default &lt;code>syncthing&lt;/code> port is set)&lt;/li>
+&lt;li>Add username and password to Syncthing&lt;/li>
+&lt;li>Search &amp;ldquo;figure out how to start it&amp;rdquo; in &lt;a href="https://anarc.at/hardware/tablet/kobo-clara-hd">&amp;ldquo;Hacking my Kobo Clara HD&amp;rdquo;&lt;/a> for several methods on how to start Syncthing on the device&lt;/li>
+&lt;/ol></description></item><item><title>Value Imperialism in the Future of Artificial Intelligence</title><link>https://h0rv.github.io/posts/value-imperialism-in-ai/</link><pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate><author>Robby</author><guid>https://h0rv.github.io/posts/value-imperialism-in-ai/</guid><description>
 &lt;blockquote>
 &lt;p>I wanted to share my final essay for a Philosophy of Science class focused on Artificial Intelligence from the Spring of my 2rd year in University - April 25, 2022 to be exact. This was my first and only Philosophy class I ever took. With that said, I really enjoyed the in-person discussions (that I was deprived of due to Covid-19 pandemic) and &lt;em>some&lt;/em> of the readings. It was by far the most academic papers I had to read in a course (several weekly readings), which often resulted in having a strong urge to take a nap after 20 minutes of reading due to the density of the texts. I especially struggled with the metaphysical and abstract ideas becasue they really did not click for me which I just ended up getting boring. Nonetheless, it was one of my favorite courses I took in college, due greatly to the lecturer who had a great personality and was wickedly intelligent.&lt;/p>
 &lt;/blockquote>

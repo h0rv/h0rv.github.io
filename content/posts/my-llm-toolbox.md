@@ -6,6 +6,12 @@ tags: ["llm", "genai", "ai", "tools"]
 draft: false
 ---
 
+<div style="display: flex;">
+  <img src="/img/llm-toolbox.jpg" style="width: 100%; object-fit: contain;" />
+</div>
+
+
+
 This a dump of tools, libraries, and other LLM-related things I have collected.
 
 > Note: I probably haven't actually used 75% of the stuff, so I am not endorsing anything in particular

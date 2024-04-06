@@ -137,6 +137,7 @@ This a dump of tools, libraries, and other LLM-related things I have collected.
 ### Security
 
   - [Rebuff](https://github.com/protectai/rebuff): Self-hardening prompt injection detector
+  - [E2B](https://github.com/e2b-dev/E2B): Sandboxed Python enviroment for AI agents
 
 ### Packaging
 

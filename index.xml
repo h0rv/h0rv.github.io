@@ -1,4 +1,362 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ℜ𝔬𝔟𝔟𝔶</title><link>https://h0rv.github.io/</link><description>Recent content on ℜ𝔬𝔟𝔟𝔶</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 31 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://h0rv.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Hacking my Kobo Clara HD in 2024</title><link>https://h0rv.github.io/posts/hacking-kobo-clara-hd/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><author>Robby</author><guid>https://h0rv.github.io/posts/hacking-kobo-clara-hd/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ℜ𝔬𝔟𝔟𝔶</title><link>https://h0rv.github.io/</link><description>Recent content on ℜ𝔬𝔟𝔟𝔶</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 06 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://h0rv.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>My LLM Toolbox</title><link>https://h0rv.github.io/posts/my-llm-toolbox/</link><pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate><author>Robby</author><guid>https://h0rv.github.io/posts/my-llm-toolbox/</guid><description>
+&lt;p>This a dump of tools, libraries, and other LLM-related things I have collected.&lt;/p>
+&lt;blockquote>
+&lt;p>Note: I probably haven&amp;rsquo;t actually used 75% of the stuff, so I am not endorsing anything in particular&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="models">
+&lt;a href="#models" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Models
+&lt;/h2>
+&lt;h3 id="function-calling">
+&lt;a href="#function-calling" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Function Calling
+&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/ShishirPatil/gorilla?tab=readme-ov-file">Gorilla&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/MeetKai/functionary">Functionary&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="voice">
+&lt;a href="#voice" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Voice
+&lt;/h3>
+&lt;h4 id="text-to-speech">
+&lt;a href="#text-to-speech" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Text-to-Speech
+&lt;/h4>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/rhasspy/piper">Piper&lt;/a>: Fast!&lt;/li>
+&lt;li>&lt;a href="https://github.com/coqui-ai/TTS">Coqui TTS&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/myshell-ai/OpenVoice">OpenVoice&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/metavoiceio/metavoice-src">MetaVoice&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/suno-ai/bark">Bark&lt;/a>: Generates any sound, not just voice!&lt;/li>
+&lt;li>&lt;a href="https://github.com/collabora/WhisperSpeech">WhisperSpeech&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/open-mmlab/Amphion">Amphion&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/myshell-ai/MeloTTS">MeloTTS&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/jasonppy/VoiceCraft">VoiceCraft&lt;/a>: Speech editing&lt;/li>
+&lt;/ul>
+&lt;h4 id="voice-to-text">
+&lt;a href="#voice-to-text" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Voice-to-Text
+&lt;/h4>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/openai/whisper">Whisper&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="leaderboards">
+&lt;a href="#leaderboards" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Leaderboards
+&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://chat.lmsys.org/?arena">Chatbot&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://gorilla.cs.berkeley.edu/leaderboard">Function Calling&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="application">
+&lt;a href="#application" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Application
+&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/Significant-Gravitas/AutoGPT">AutoGPT&lt;/a> (never actually even tried it lol)&lt;/li>
+&lt;li>&lt;a href="https://github.com/OpenInterpreter/01">01&lt;/a>: Language Model Computer&lt;/li>
+&lt;li>&lt;a href="https://github.com/impredicative/podgenai?tab=readme-ov-file">podgenai&lt;/a>: AI generated podcasts (both content and voice)&lt;/li>
+&lt;/ul>
+&lt;h3 id="cli">
+&lt;a href="#cli" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+CLI
+&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/gorilla-llm/gorilla-cli">&lt;code>gorilla-cli&lt;/code>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/gofireflyio/aiac">&lt;code>aiac&lt;/code>&lt;/a>: Generate IaC files from Terraform to CI config files&lt;/li>
+&lt;li>&lt;a href="https://github.com/simonw/llm?tab=readme-ov-file">llm&lt;/a>: Prompt models from the CLI&lt;/li>
+&lt;li>&lt;a href="https://github.com/OpenInterpreter/open-interpreter">Open Interpreter&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="neovim">
+&lt;a href="#neovim" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+NeoVim
+&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/huggingface/llm.nvim">llm.nvim&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="local">
+&lt;a href="#local" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Local
+&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/ollama/ollama">Ollama&lt;/a>: Run models locally and easily&lt;/li>
+&lt;li>&lt;a href="https://github.com/mlc-ai/web-llm">Web LLM&lt;/a>: Run models in the browser!&lt;/li>
+&lt;li>&lt;a href="https://github.com/mudler/LocalAI">LocalAI&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/OpenDevin/OpenDevin">OpenDevin&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/nomic-ai/gpt4all">GPT4All&lt;/a>: Local ChatGPT&lt;/li>
+&lt;li>&lt;a href="https://github.com/meta-llama/llama">Llama&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/ggerganov/llama.cpp">Llama.cpp&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/bionic-gpt/bionic-gpt">BionicGPT&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/janhq/jan">Jan&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/open-webui/open-webui">Open WebUI&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="desktop-integration">
+&lt;a href="#desktop-integration" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Desktop Integration
+&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/HorrorPills/ChatGPT-Gnome-Desktop-Extension">ChatGPT Gnome Extension&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/lencx/ChatGPT">ChatGPT Desktop Client&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="developer-tools">
+&lt;a href="#developer-tools" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Developer Tools
+&lt;/h2>
+&lt;h3 id="example-apps">
+&lt;a href="#example-apps" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Example Apps
+&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/ray-project/llm-applications">Production RAG&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/run-llama/sec-insights">SEC Insights&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/langchain-ai/chat-langchain">Chat LangChain&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/arc53/DocsGPT">DocsGPT&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="frameworks">
+&lt;a href="#frameworks" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Frameworks
+&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/langchain-ai/langchain/">LangChain&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/run-llama/llama_index">LlamaIndex&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/microsoft/autogen">AutoGen&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/IntelLabs/fastRAG?tab=readme-ov-file">fastRAG&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="data-loaders">
+&lt;a href="#data-loaders" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Data Loaders
+&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/Unstructured-IO/unstructured">Unstructured&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="structured-output">
+&lt;a href="#structured-output" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Structured Output
+&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/jxnl/instructor">Instructor&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/sgl-project/sglang">SGLang&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/eth-sri/lmql">LMQL&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/guidance-ai/guidance">guidance&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/gptscript-ai/gptscript">GPTScript&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/bananaml/fructose">Fructose&lt;/a>: Strongly-typed LLM calls&lt;/li>
+&lt;li>&lt;a href="https://github.com/stanfordnlp/dspy">DSPy&lt;/a>: Programming, not prompting, models&lt;/li>
+&lt;/ul>
+&lt;h3 id="embeddings">
+&lt;a href="#embeddings" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Embeddings
+&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/UKPLab/sentence-transformers">&lt;code>sentence-tranfomers&lt;/code>&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="vector-databases">
+&lt;a href="#vector-databases" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Vector Databases
+&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/qdrant/qdrant">Qdrant&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/RediSearch/RediSearch">RediSearch&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/weaviate/weaviate">Weaviate&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/milvus-io/milvus">Milvus&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/pgvector/pgvector">pgvector&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="observability">
+&lt;a href="#observability" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Observability
+&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/langfuse/langfuse">Langfuse&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/traceloop/openllmetry">Openllmetry&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="evaluations-evals">
+&lt;a href="#evaluations-evals" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Evaluations (Evals)
+&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/explodinggradients/ragas">Ragas&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="security">
+&lt;a href="#security" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Security
+&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/protectai/rebuff">Rebuff&lt;/a>: Self-hardening prompt injection detector&lt;/li>
+&lt;/ul>
+&lt;h3 id="packaging">
+&lt;a href="#packaging" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Packaging
+&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/Mozilla-Ocho/llamafile">Llamafile&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/replicate/cog">Cog&lt;/a>: Containers for ML models&lt;/li>
+&lt;/ul>
+&lt;h3 id="lowno-code">
+&lt;a href="#lowno-code" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Low/No Code
+&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/FlowiseAI/Flowise">Flowise&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/logspace-ai/langflow">Langflow&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/openchatai/OpenCopilot">OpenCopilot&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="go">
+&lt;a href="#go" class="anchor">
+&lt;svg class="icon" aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+&lt;path fill-rule="evenodd"
+d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+&lt;/path>
+&lt;/svg>
+&lt;/a>
+Go
+&lt;/h2>
+&lt;p>I made the dumb mistake of trying to make a RAG app in Go. The ecosystem is way behind Python and JavaScript, but still found some promising projects.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/tmc/langchaingo">LangChain Go&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/nlpodyssey/cybertron">Cybertron&lt;/a>: Use pre-trained transfomers from HuggingFace for tasks like vector embedding, etc.&lt;/li>
+&lt;li>&lt;a href="https://github.com/redis/rueidis">RediSearch Client&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Hacking my Kobo Clara HD in 2024</title><link>https://h0rv.github.io/posts/hacking-kobo-clara-hd/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><author>Robby</author><guid>https://h0rv.github.io/posts/hacking-kobo-clara-hd/</guid><description>
 &lt;p>This post is an extension of the great tutorial &lt;a href="https://anarc.at/hardware/tablet/kobo-clara-hd">&amp;ldquo;Hacking my Kobo Clara HD&amp;rdquo;&lt;/a>, with the some extra details and clarifications from my experience.&lt;/p>
 &lt;h2 id="1-installing-koreader">
 &lt;a href="#1-installing-koreader" class="anchor">

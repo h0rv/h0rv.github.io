@@ -310,6 +310,7 @@ Security
 &lt;/h3>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/protectai/rebuff">Rebuff&lt;/a>: Self-hardening prompt injection detector&lt;/li>
+&lt;li>&lt;a href="https://github.com/e2b-dev/E2B">E2B&lt;/a>: Sandboxed Python enviroment for AI agents&lt;/li>
 &lt;/ul>
 &lt;h3 id="packaging">
 &lt;a href="#packaging" class="anchor">

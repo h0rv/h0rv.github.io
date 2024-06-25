@@ -8,7 +8,7 @@ date: 2024-02-27
 
 **Hi, I am Robby!** I am a software engineer and digital minimalist.
 
-I am passionate about open souce, infrastructure, and AI.
+I am passionate about open source, infrastructure, and AI.
 Additionally, I care deeply about the effects that technologies have on society, in particular:
 addictive technologies, detrimental consquences of centralization, and AI.
 

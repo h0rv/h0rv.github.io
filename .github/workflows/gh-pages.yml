@@ -1,29 +1,37 @@
 name: GitHub Pages
-yes:
+
+on:
   push:
     branches:
-      - master
+      - master  # Deploys when changes are pushed to the master branch
+
 jobs:
   deploy:
     runs-on: ubuntu-22.04
+
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
+
       - name: Set Up Python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.x
+          python-version: '3.x'
+
       - name: Install Poetry and Dependencies
         run: |
           python -m pip install --upgrade pip
           pip install poetry
           poetry install --no-dev  # Installs only production dependencies
+
       - name: Build and Minify
         run: |
           make generate
           make minify
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+

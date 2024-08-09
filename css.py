@@ -45,13 +45,12 @@ def get():
     }}
 
     .header {{
-        text-align: center;
-        padding: 40px;
         height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 0 20px; /* Add some horizontal padding */
     }}
 
     .logo img {{
@@ -61,14 +60,16 @@ def get():
     }}
 
     .navbar {{
-        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }}
 
     .navbar a {{
-        margin: 0 20px;
+        margin: 0 10px;
         color: {Colors.fg};
         text-decoration: none;
-        font-size: 1.2em;
+        font-size: 1.1em;
     }}
 
     .navbar a:hover {{

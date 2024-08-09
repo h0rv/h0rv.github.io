@@ -1,4 +1,3 @@
-import markdown
 import yaml
 
 import html_utils
@@ -17,18 +16,14 @@ def generate_index():
     front_matter_match = content.split("---", 2)
     if len(front_matter_match) == 3:
         front_matter = front_matter_match[1]
-        body = front_matter_match[2]
         metadata = yaml.safe_load(front_matter)
     else:
-        body = content
         metadata = {}
 
     title = metadata.get("title")
     description = metadata.get("description")
     keywords = metadata.get("keywords")
     logo_path = metadata.get("logo_path")
-
-    html_body = markdown.markdown(body)
 
     sections = {
         "h2": {
@@ -37,22 +32,6 @@ def generate_index():
             "Library": "/library",
         },
     }
-
-    # Update HTML content with IDs or URLs
-    for section_name, section_id in sections["h2"].items():
-        # Check if it's an anchor or a URL
-        if section_id.startswith("#"):
-            html_body = html_body.replace(
-                f"<h2>{section_name}</h2>",
-                f'<h2 id="{section_id[1:]}">{section_name}</h2>',
-            )
-        else:
-            html_body = html_body.replace(
-                f"<h2>{section_name}</h2>",
-                f"<h2>{section_name}</h2>",
-            )
-
-    html_body = html_body.replace("<h2", "<hr>\n<h2")
 
     # Generate the navigation bar
     sections_navbar = "|\n".join(
@@ -69,10 +48,6 @@ def generate_index():
             <div class="navbar">
                 {sections_navbar}
             </div>
-        </div>
-        <hr>
-        <div class="content">
-            {html_body}
         </div>
     """
 

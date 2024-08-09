@@ -1,32 +1,37 @@
-name: github pages
+name: GitHub Pages
 
-on:
+yes:
+  pull_request:
   push:
     branches:
-      - master  # Set a branch that will trigger a deployment
-  pull_request:
+      - master
 
 jobs:
   deploy:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3
+
+      - name: Checkout Code
+        uses: actions/checkout@v3
+      - name: Set Up Python
+        uses: actions/setup-python@v4
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          python-version: 3.x
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: 'latest'
-          extended: true
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install poetry
+          poetry install
 
-      - name: Build
-        run: hugo --minify
+      - name: Build and Minify
+        run: |
+          make generate
+          make minify
 
-      - name: Deploy
+      - if: github.ref == 'refs/heads/master'
+        name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/master'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public

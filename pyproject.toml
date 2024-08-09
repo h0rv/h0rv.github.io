@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "horv.co"
+version = "0.1.0"
+description = ""
+authors = ["Robby <h0rv@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "horv"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+markdown = "^3.6"
+pyyaml = "^6.0.1"
+minify-html = "^0.15.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.5.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

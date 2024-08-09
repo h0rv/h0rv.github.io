@@ -6,7 +6,7 @@ tags: [technology, AI, llm, genai, security]
 draft: true
 ---
 
-![LLM Viruses](./img/llm-viruses.jpg)
+![LLM Viruses](./imgs/llm-viruses.jpg)
 
 We have all seen simple, sometimes clever, but always funny "prompt injection" attacks done on ChatGPT and other state-of-the-art Large Language Models (LLM) through standard chat interfaces.
 

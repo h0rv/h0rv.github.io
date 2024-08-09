@@ -32,9 +32,9 @@ def generate_index():
 
     sections = {
         "h2": {
-            "About": "#about",
+            "About": "/about",
             "Blog": "/blogs",
-            "Contact": "#contact",
+            "Library": "/library",
         },
     }
 

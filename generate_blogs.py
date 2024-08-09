@@ -99,7 +99,6 @@ def generate_blog_posts():
         title = metadata["title"]
         blog_date = metadata["date"]
         assert isinstance(blog_date, date), f"invalid date: {blog_date}"
-        tags = metadata["tags"]
 
         html_body = markdown.markdown(body)
 
@@ -113,7 +112,10 @@ def generate_blog_posts():
         """
 
         html_page = html_utils.get(
-            metadata["title"], metadata["description"], "", html_content
+            metadata["title"],
+            metadata["description"],
+            metadata["tags"],
+            html_content,
         )
 
         output_filename = os.path.join(html_blogs_dir, filename.replace(".md", ".html"))
@@ -132,4 +134,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

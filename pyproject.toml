@@ -5,6 +5,7 @@ description = ""
 authors = ["Robby <h0rv@users.noreply.github.com>"]
 readme = "README.md"
 packages = [{include = "horv"}]
+package-mode=false
 
 [tool.poetry.dependencies]
 python = "^3.12"

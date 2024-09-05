@@ -7,7 +7,7 @@ draft: false
 ---
 
 <div style="display: flex;">
-  <img src="/imgs/llm-toolbox.jpg" style="width: 100%; object-fit: contain;" />
+  <img src=/imgs/llm-toolbox.jpg" style="width: 100%; object-fit: contain;" />
 </div>
 
 

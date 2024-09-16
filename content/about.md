@@ -6,6 +6,6 @@ keywords: about, blog, personal, digital minimalism, software engineer, tech, li
 
 ## About
 
-Hi, I am Robby! I am a software engineer and digital minimalist.
+Hi, I'm Robby and welcome to my home on the web!
 
-I am passionate about open source, infrastructure, and AI. Additionally, I care deeply about the effects that technologies have on society, in particular: addictive technologies, detrimental consequences of centralization, and AI.
+I'm a software engineer and digital minimalist who is passionate about open source, cloud/infrastructure, and AI.

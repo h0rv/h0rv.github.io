@@ -74,7 +74,7 @@ def generate_blogs_index():
         </div>
     """
 
-    html_page = html_utils.get(post["title"], post["description"], "", html_body)
+    html_page = html_utils.get("horv.co - Blog", "blog posts from horv", "", html_body)
 
     return html_page
 

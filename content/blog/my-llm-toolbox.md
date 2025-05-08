@@ -7,7 +7,7 @@ draft: false
 ---
 
 <div style="display: flex;">
-  <img src=/imgs/llm-toolbox.jpg" style="width: 100%; object-fit: contain;" />
+  <img src="/static/imgs/llm-toolbox.jpg" style="width: 100%; object-fit: contain;" />
 </div>
 
 
@@ -167,4 +167,3 @@ This a dump of tools, libraries, and other LLM-related things I have collected.
   - [LangChain Go](https://github.com/tmc/langchaingo)
   - [Cybertron](https://github.com/nlpodyssey/cybertron): Use pre-trained transfomers from HuggingFace for tasks like vector embedding, etc.
   - [RediSearch Client](https://github.com/redis/rueidis)
-

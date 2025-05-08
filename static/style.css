@@ -1,0 +1,254 @@
+/* Cozy Monochrome Theme - Static Site Generator */
+:root {
+    --bg-color: #080808;
+    --text-color: #f0f0f0;
+    --accent-color: #b8b8b8;
+    --secondary-color: #909090;
+    --muted-color: #787878;
+    --border-color: #333333;
+    --code-bg: #151515;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Source Sans Pro", "Roboto", system-ui, sans-serif;
+    line-height: 1.65;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+}
+
+.container {
+    width: 60%;
+    max-width: 650px;
+    margin: 0 0 0 20%;
+    padding: 4rem 0;
+}
+
+header {
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+header p {
+    color: var(--muted-color);
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+main {
+    margin-bottom: 5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 2.25rem 0 1rem;
+    line-height: 1.3;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.65rem;
+}
+
+h3 {
+    font-size: 1.35rem;
+}
+
+p,
+ul,
+ol {
+    margin-bottom: 1.75rem;
+}
+
+ul,
+ol {
+    padding-left: 1.75rem;
+}
+
+ul li,
+ol li {
+    margin-bottom: 0.75rem;
+}
+
+/* Fix for bullet points */
+ul {
+    list-style-type: none;
+}
+
+ul li:before {
+    content: "–";
+    color: var(--accent-color);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    opacity: 0.75;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border-color);
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--text-color);
+}
+
+code {
+    background-color: var(--code-bg);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-family: "JetBrains Mono", "Fira Code", monospace;
+    font-size: 0.9em;
+}
+
+pre {
+    background-color: var(--code-bg);
+    padding: 1.5rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin-bottom: 2rem;
+    border: 1px solid var(--border-color);
+}
+
+pre code {
+    padding: 0;
+    background-color: transparent;
+}
+
+blockquote {
+    border-left: 2px solid var(--border-color);
+    padding-left: 1.25rem;
+    margin-left: 0;
+    color: var(--muted-color);
+    font-style: italic;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+}
+
+/* Blog post specific styles */
+.post-meta {
+    color: var(--muted-color);
+    font-size: 0.85rem;
+    margin-bottom: 1.75rem;
+}
+
+.post-content {
+    max-width: 38em;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.75rem;
+}
+
+.tag {
+    background-color: rgba(128, 128, 128, 0.15);
+    color: var(--accent-color);
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    letter-spacing: 0.02em;
+}
+
+/* Navigation */
+nav {
+    margin-bottom: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.75rem;
+    padding-left: 0;
+}
+
+nav ul li:before {
+    content: none;
+}
+
+nav a {
+    font-weight: 400;
+    padding: 0.2rem 0;
+    transition: color 0.2s ease;
+    color: var(--muted-color);
+    border-bottom: none;
+}
+
+nav a:hover {
+    color: var(--text-color);
+}
+
+nav a.active {
+    color: var(--text-color);
+}
+
+/* Main content area subtle styling */
+main p {
+    opacity: 0.95;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .container {
+        width: 65%;
+        margin: 0 10%;
+        padding: 3rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 85%;
+        margin: 0 7.5%;
+        padding: 2.5rem 0;
+    }
+
+    body {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 92%;
+        margin: 0 4%;
+        padding: 2rem 0;
+    }
+
+    body {
+        font-size: 16px;
+    }
+}

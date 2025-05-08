@@ -1,8 +1,9 @@
 ---
-title: horv.co
+title: Home
 description: Blog of a digital minimalist software engineer.
-keywords: blog, personal, digital minimalism, software engineer, tech, life
-# logo_path: imgs/horv-glitter.gif
-logo_path: imgs/horv-dragon.png
-# logo_path: imgs/horv-logo.png
+tags: blog, personal, digital minimalism, software engineer, tech, life
 ---
+
+Hi, I'm Robby and welcome to my home on the web!
+
+I'm a software engineer and digital minimalist who is passionate about open source, cloud/infrastructure, and AI.

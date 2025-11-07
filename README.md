@@ -4,6 +4,5 @@
 
 ```bash
 uv run generate.py
-cd public
-python -m http.server 8000
+python -m http.server 8000 -d public
 ```

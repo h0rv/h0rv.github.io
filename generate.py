@@ -1,6 +1,13 @@
+# /// script
+# dependencies = [
+#   "markdown2>=2.5.3",
+#   "pyyaml>=6.0.2",
+# ]
+# ///
+
 import os
 import shutil
-from datetime import datetime
+from datetime import datetime, date
 from dataclasses import dataclass, field
 
 import markdown2
@@ -80,7 +87,13 @@ class SiteGenerator:
             )
 
         # Convert markdown to HTML
-        html = markdown2.markdown(content, extras=["fenced-code-blocks", "tables"])
+        html = markdown2.markdown(
+            content,
+            extras=[
+                "fenced-code-blocks",
+                "tables",
+            ],
+        )
 
         # Create and return Page object
         page = Page(
@@ -95,15 +108,12 @@ class SiteGenerator:
 
         return page
 
-    def format_date(self, date_str: str) -> str:
+    def format_date(self, dt: str | date) -> str:
         """Format a date string from YYYY-MM-DD to Month DD, YYYY."""
-        if not date_str:
-            return ""
-        try:
-            date_obj = datetime.strptime(date_str, "%Y-%m-%d")
-            return date_obj.strftime("%B %d, %Y")
-        except:
-            return date_str
+        if isinstance(dt, date):
+            dt = dt.strftime("%Y-%m-%d")
+        date_obj = datetime.strptime(dt, "%Y-%m-%d")
+        return date_obj.strftime("%B %d, %Y")
 
     def get_navigation_items(self) -> dict[str, dict]:
         """Discover content files for navigation."""

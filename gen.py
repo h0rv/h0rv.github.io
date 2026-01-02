@@ -44,9 +44,9 @@ post_list = "<hr><h2 style='margin-bottom:0.5rem'>Writing</h2><ul style='margin-
 ) + "</ul>"
 Path("public/index.html").write_text(html("Home", markdown.markdown(index) + post_list, nav))
 
-# Generate media list
-Path("public/media-list.html").write_text(
-    html("Media List", markdown.markdown(Path("content/media-list.md").read_text()), nav)
+# Generate mediashelf
+Path("public/mediashelf.html").write_text(
+    html("Mediashelf", markdown.markdown(Path("content/mediashelf.md").read_text()), nav)
 )
 
-print(f"✓ Generated {len(posts)} posts + index + media-list")
+print(f"✓ Generated {len(posts)} posts + index + mediashelf")

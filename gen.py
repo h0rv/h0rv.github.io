@@ -23,9 +23,12 @@ for f in Path("content").glob("*.md"):
 nav = ' · '.join(f'<a href="{link}">{name}</a>' for name, link in nav_pages)
 
 def html(title, body, nav=''):
-    return f'<!DOCTYPE html><html><head><meta charset="utf-8"><title>{title}</title>' \
-           f'<link rel="stylesheet" href="https://unpkg.com/classless-tufte-css@1.3.0/tufte.min.css">' \
-           f'</head><body><nav style="padding:1.5rem 0;font-size:1.1rem">{nav}</nav><article>{body}</article></body></html>'
+    return f'<!DOCTYPE html><html><head><meta charset="utf-8">' \
+           '<meta name="viewport" content="width=device-width, initial-scale=1">' \
+           f'<title>{title}</title>' \
+           '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tufte-css@1.8.0/tufte.min.css">' \
+           '<style>nav{padding:1rem 0;font-size:1.05rem}nav a{padding:0.5rem}article{padding-bottom:1rem}@media(max-width:760px){nav a{display:inline-block;padding:0.5rem 0.75rem}}</style>' \
+           f'</head><body><nav>{nav}</nav><article>{body}</article></body></html>'
 
 # Generate blog posts
 posts = []

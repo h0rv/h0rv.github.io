@@ -20,12 +20,12 @@ for f in Path("content").glob("*.md"):
     if f.stem != 'index':
         name = f.stem.replace('-', ' ').title()
         nav_pages.append((name, f"{f.stem}.html"))
-nav = ' :: '.join(f'<a href="{link}">{name}</a>' for name, link in nav_pages)
+nav = ' · '.join(f'<a href="{link}">{name}</a>' for name, link in nav_pages)
 
 def html(title, body, nav=''):
     return f'<!DOCTYPE html><html><head><meta charset="utf-8"><title>{title}</title>' \
            f'<link rel="stylesheet" href="https://unpkg.com/classless-tufte-css@1.3.0/tufte.min.css">' \
-           f'</head><body><nav>{nav}</nav><article>{body}</article></body></html>'
+           f'</head><body><nav style="padding:1.5rem 0;font-size:1.1rem">{nav}</nav><article>{body}</article></body></html>'
 
 # Generate blog posts
 posts = []

@@ -3,5 +3,5 @@
 ## Build
 
 ```bash
-./gen.py && uv run python -m http.server 8000 -d public
+uv run gen.py && uv run python -m http.server 8000 -d public
 ```

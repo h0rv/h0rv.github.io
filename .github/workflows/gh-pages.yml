@@ -14,7 +14,7 @@ jobs:
 
       - uses: astral-sh/setup-uv@v7
 
-      - run: uv run generate.py
+      - run: uv run gen.py
 
       - uses: peaceiris/actions-gh-pages@v4
         with:

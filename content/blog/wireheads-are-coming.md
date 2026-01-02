@@ -1,12 +1,7 @@
----
-title: Wireheads are Coming
-date: 2023-06-06
-description: Wireheads are Coming
-tags: [digital minimalism, technology, apple vision, spatial computing, dystopia]
-draft: false
----
+# Wireheads are Coming
+2023-06-06
 
-![Wireheads are Coming](/static/imgs/wireheads-are-coming.jpg)
+![Wireheads are Coming](/static/wireheads-are-coming.jpg)
 
 The announcement of the Apple Vision Pro yesterday left me very conflicted. On one hand, the productivity gains that can be yielded by replacing the standard desk and monitor setups for myself and many others (and being able to easily travel with such large "screen space") is very exciting. On the other, the dystopic future that was once predicted in 80's science fiction is one step closer to becoming realized.
 
@@ -16,4 +11,4 @@ But I suppose this greatly depends on how one uses such technologies daily. If o
 
 Part of this truly scares me. I witness individuals scroll on TikTok, with their audio muted for extended periods. So, if an app like TikTok can be so addicting and stimulating on a small, 6-inch screen with, as seen, without audio not even necessary, how high is the ceiling of entrancement such apps can cast on their users with the levels of immersion spatial audio and video can give?
 
-That is why I was always fascinated with the term "wirehead," introduced to me by William Gibson in his Sprawl Trilogy. He used it to refer to individuals constantly "jacked-in" into cyberspace because whatever was in there, was "better", at least in the current moment more entertaining or stimulating, than the life, _their life_, right in front of them. I always thought it was funny due to how closely this resembles the masses' current use of smartphones, but now the actual wirehead is near.
+That is why I was always fascinated with the term "wirehead," introduced to me by William Gibson in his Sprawl Trilogy. He used it to refer to individuals constantly "jacked-in" into cyberspace because whatever was in there, was "better", at least in the current moment more entertaining or stimulating, than the life, *their life*, right in front of them. I always thought it was funny due to how closely this resembles the masses' current use of smartphones, but now the actual wirehead is near.

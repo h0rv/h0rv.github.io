@@ -7,9 +7,12 @@ import markdown, re, shutil
 
 Path("public").mkdir(exist_ok=True)
 
-# Copy static files
-if Path("content/static").exists():
-    shutil.copytree("content/static", "public/static", dirs_exist_ok=True)
+# Copy non-markdown files from content/
+for f in Path("content").rglob("*"):
+    if f.is_file() and f.suffix != ".md":
+        dest = Path("public") / f.relative_to("content")
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy(f, dest)
 
 # Build navigation
 nav_pages = [('Home', 'index.html')]

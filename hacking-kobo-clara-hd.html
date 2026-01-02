@@ -1,0 +1,62 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Hacking my Kobo Clara HD in 2024</title><link rel="stylesheet" href="https://unpkg.com/classless-tufte-css@1.3.0/tufte.min.css"></head><body><nav><a href="index.html">Home</a> :: <a href="mediashelf.html">Mediashelf</a></nav><article><h1>Hacking my Kobo Clara HD in 2024</h1>
+<p>2024-03-31</p>
+<p>This post is an extension of the great tutorial <a href="https://anarc.at/hardware/tablet/kobo-clara-hd">"Hacking my Kobo Clara HD"</a>, with the some extra details and clarifications from my experience.</p>
+<h2>1. Installing KOReader</h2>
+<p>This thread has the installation information: <a href="https://www.mobileread.com/forums/showthread.php?t=314220">link</a>.</p>
+<ul>
+<li>Search for "One-Click Kobo Packages", and download the desired package zip (I just did KOReader and Plato)</li>
+<li>Search for your OS ("Windows", "macOS", or "Linux") and download the "install script archive" and unzip it in the same folder as the package zip.</li>
+<li>Run <code>./install.sh</code>; follow any prompts</li>
+<li>Safely eject the device, reboot, and profit!</li>
+</ul>
+<h2>2. Configuring SSH</h2>
+<ul>
+<li>Plug in your device via USB and mount it (probably done automatically)</li>
+<li>Copy in your public RSA (non-RSA might not work, but did not confirm) SSH key into:</li>
+</ul>
+<p><code>&lt;Full Path to Reader&gt;/KOBOeReader/.adds/koreader/settings/SSH/authorized_keys</code></p>
+<p>For reference, my full path on Linux looks like:</p>
+<p><code>/run/media/horv/KOBOeReader/.adds/koreader/settings/SSH/authorized_keys</code></p>
+<p>...and my copy command looks like:</p>
+<p><code>cp ~/.ssh/id_rsa.pub /run/media/horv/KOBOeReader/.adds/koreader/settings/SSH/authorized_keys</code></p>
+<ul>
+<li>
+<p>Safely eject the device</p>
+</li>
+<li>
+<p>SSH into device following [KOReader docs](Connect to the e-reader via SSH)</p>
+</li>
+<li>
+<p>Transferring files via SSH:</p>
+</li>
+</ul>
+<p><code>scp -P 2222 &lt;Local File Path&gt; root@&lt;Your Kobo IP&gt;:&lt;Destination Path on Kobo&gt;`</code></p>
+<h2>3. Installing Syncthing</h2>
+<ul>
+<li>Install latest ARM binary (32-bit for Kobo Clara HD)</li>
+<li>SSH into device (see step 2)</li>
+<li>Make Syncthing config directory: <code>mkdir -p ~/.config/syncthing</code></li>
+<li>Add config:</li>
+</ul>
+<p><code>echo '&lt;configuration version="18"&gt;
+    &lt;gui enabled="true" tls="false" debugging="false"&gt;
+        &lt;address&gt;0.0.0.0:8384&lt;/address&gt;
+    &lt;/gui&gt;
+&lt;/configuration&gt;' &gt; ~/.config/syncthing/config.xml</code></p>
+<ul>
+<li>Copy a valid certificate authority (<code>ca-certificates.crt</code>) to device from your own. For me it was:</li>
+</ul>
+<p><code>scp -P 2222 /etc/ssl/certs/ca-certificates.crt root@&lt;Your Kobo IP&gt;:/etc/ssl/certs/</code></p>
+<ul>
+<li>Run <code>syncthing</code> over SSH:</li>
+</ul>
+<p><code>sh
+/mnt/onboard/.adds/syncthing</code></p>
+<ul>
+<li>Open <code>syncthing</code> via a browser by going to:<ul>
+<li><code>http://&lt;Your Kobo IP&gt;:8384/</code> (assuming default <code>syncthing</code> port is set)</li>
+</ul>
+</li>
+<li>For security, add a username and password to Syncthing</li>
+<li>Search "figure out how to start it" in <a href="https://anarc.at/hardware/tablet/kobo-clara-hd">"Hacking my Kobo Clara HD"</a> for several methods on how to start Syncthing on the device</li>
+</ul></article></body></html>

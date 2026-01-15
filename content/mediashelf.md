@@ -6,6 +6,7 @@ What I am reading, listening, and watching
 ### January
 
 * 14th
+    * [Scaling long-running autonomous coding](https://cursor.com/blog/scaling-agents)
     * [Why We Built Our Own Background Agent](https://builders.ramp.com/post/why-we-built-our-background-agent)
 
 * 7th

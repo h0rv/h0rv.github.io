@@ -5,6 +5,12 @@ What I am reading, listening, and watching
 
 ### January
 
+* 
+
+* 18th
+    * [The Melancholy of Subculture Society](https://gwern.net/subculture)
+    *[Why We've Tried to Replace Developers Every Decade Since 1969](https://www.caimito.net/en/blog/2025/12/07/the-recurring-dream-of-replacing-developers.html)
+
 * 14th
     * [Scaling long-running autonomous coding](https://cursor.com/blog/scaling-agents)
     * [Why We Built Our Own Background Agent](https://builders.ramp.com/post/why-we-built-our-background-agent)

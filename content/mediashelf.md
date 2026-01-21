@@ -5,6 +5,9 @@ What I am reading, listening, and watching
 
 ### January
 
+* 21st
+    * [Protecting your time from predators in large tech companies](https://www.seangoedecke.com/predators/)
+
 * 18th
     * [The Melancholy of Subculture Society](https://gwern.net/subculture)
     * [Why We've Tried to Replace Developers Every Decade Since 1969](https://www.caimito.net/en/blog/2025/12/07/the-recurring-dream-of-replacing-developers.html)

@@ -5,6 +5,15 @@ What I am reading, listening, and watching
 
 ### January
 
+
+
+* 26th
+    * [Parse, don’t validate](https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/)
+    * [Running Claude Code dangerously (safely)](https://blog.emilburzo.com/2026/01/running-claude-code-dangerously-safely/)
+
+* 24th
+    * [Unrolling the Codex agent loop](https://openai.com/index/unrolling-the-codex-agent-loop/)
+
 * 21st
     * [Protecting your time from predators in large tech companies](https://www.seangoedecke.com/predators/)
 

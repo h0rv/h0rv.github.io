@@ -5,7 +5,8 @@ What I am reading, listening, and watching
 
 ### January
 
-
+* 28th
+    * [Rust at Scale: An Added Layer of Security for WhatsApp](https://engineering.fb.com/2026/01/27/security/rust-at-scale-security-whatsapp/)
 
 * 26th
     * [Parse, don’t validate](https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/)

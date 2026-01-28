@@ -30,7 +30,7 @@ What I am reading, listening, and watching
     * [Why We Built Our Own Background Agent](https://builders.ramp.com/post/why-we-built-our-background-agent)
 
 * 7th
-    * [Emergent Behavior: When Skills Combine]((https://vibeandscribe.xyz/posts/2025-01-07-emergent-behavior.html])
+    * [Emergent Behavior: When Skills Combine](https://vibeandscribe.xyz/posts/2025-01-07-emergent-behavior.html)
     * [The rise of industrial software](https://chrisloy.dev/post/2025/12/30/the-rise-of-industrial-software)
 
 * 1st

@@ -6,6 +6,7 @@ What I am reading, listening, and watching
 ### January
 
 * 28th
+    * [Beating the Averages](https://paulgraham.com/avg.html)
     * [Type Safety Back and Forth](https://www.parsonsmatt.org/2017/10/11/type_safety_back_and_forth.html)
         > By restricting our past, we gain freedom in the future.
     * [Rust at Scale: An Added Layer of Security for WhatsApp](https://engineering.fb.com/2026/01/27/security/rust-at-scale-security-whatsapp/)

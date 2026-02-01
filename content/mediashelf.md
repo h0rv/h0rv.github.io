@@ -5,10 +5,21 @@ What I am reading, listening, and watching
 
 ### January
 
+* 31st
+    * [Why Elixir/OTP doesn't need an Agent framework: Part 2](https://goto-code.com/why-elixir-otp-doesnt-need-an-agent-framework-part-2/)
+    * [Why Elixir/OTP doesn't need an Agent framework: Part 1](https://goto-code.com/why-elixir-otp-doesnt-need-agent-framework-part-1/)
+
+* 29th
+    * [The Soul of Erlang and Elixir • Sasa Juric • GOTO 2019](https://www.youtube.com/watch?v=JvBT4XBdoUE)
+
+        Wow, Elixir is so based
+
 * 28th
     * [Beating the Averages](https://paulgraham.com/avg.html)
     * [Type Safety Back and Forth](https://www.parsonsmatt.org/2017/10/11/type_safety_back_and_forth.html)
+
         > By restricting our past, we gain freedom in the future.
+
     * [Rust at Scale: An Added Layer of Security for WhatsApp](https://engineering.fb.com/2026/01/27/security/rust-at-scale-security-whatsapp/)
 
 * 26th

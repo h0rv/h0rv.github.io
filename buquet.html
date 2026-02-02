@@ -1,9 +1,9 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title><code>qo</code>: A Queue on Object (Storage)</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tufte-css@1.8.0/tufte.min.css"><style>nav{padding:1rem 0;font-size:1.05rem}nav a{padding:0.5rem}article{padding-bottom:1rem}@media(max-width:760px){nav a{display:inline-block;padding:0.5rem 0.75rem}}</style></head><body><nav><a href="index.html">Home</a> · <a href="mediashelf.html">Mediashelf</a></nav><article><h1><code>qo</code>: A Queue on Object (Storage)</h1>
-<p>2026-02-01</p>
-<p><code>qo</code> and <code>qow</code> (pronounced cow 🐮) are Rust and Python (for now) libraries for building durable queues and workflows with the only infrastructure dependency of S3-compatible object storage.</p>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title><code>buquet</code>: Bucket Queue and Workflow Orchestrator</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tufte-css@1.8.0/tufte.min.css"><style>nav{padding:1rem 0;font-size:1.05rem}nav a{padding:0.5rem}article{padding-bottom:1rem}@media(max-width:760px){nav a{display:inline-block;padding:0.5rem 0.75rem}}</style></head><body><nav><a href="index.html">Home</a> · <a href="mediashelf.html">Mediashelf</a></nav><article><h1><code>buquet</code>: Bucket Queue and Workflow Orchestrator</h1>
+<p>2026-02-02</p>
+<p><code>buquet</code> is a Rust and Python library for building durable queues and workflows with the only infrastructure dependency of S3-compatible object storage.</p>
 <p>The motivation behind this project was from experience of using Temporal and related projects for production workflows. This project doesn't aim to replace these tools, as they still have their place, but aims to provide a simpler alternative that hopefully aligns with more use cases of different scales.</p>
 <p>I have to credit the idea to the <a href="https://turbopuffer.com/">turbopuffer</a> team and their transparency of the tech that enabled them to build an exceptional and fast database for the AI era on S3 (and compatible object storage).</p>
-<p>Essentially, in the past 5ish years, the following S3 features made such applications possible:</p>
+<p>Essentially, in the past five years, the following S3 features made such applications possible:</p>
 <ul>
 <li>Read-after-write consistency (December 2020)<ul>
 <li>After writing data, it is immediately available for reads.</li>
@@ -18,9 +18,9 @@
 </ul>
 </li>
 </ul>
-<p>Each of these features enabled the creation of <code>qo</code>, offloading a lot of the complexity distributed systems to S3 - essentially making S3 the "control plane".</p>
-<h2>How These Features Enable <code>qo</code></h2>
-<p><strong>Atomic task claiming</strong>: when multiple workers try to claim the same task, they each capture the task object's ETAG, then attempt a conditional PUT with <code>If-Match</code>. One will successfully claim the task and start its execution - the other will receive a 412 and continue looking for other available tasks. This is all without the workers coordinating or being aware of each other.</p>
+<p>Each of these features enabled the creation of <code>buquet</code>, offloading a lot of the complexity distributed systems to S3 - essentially making S3 the "control plane".</p>
+<h2>How These Features Enable <code>buquet</code></h2>
+<p><strong>Atomic task claiming</strong>: when multiple workers try to claim the same task, they each capture the task object's ETag (Entity Tag), a unique identifier tied to a specific version of an object, then attempt a conditional PUT with <code>If-Match</code>. One will successfully claim the task and start its execution - the other will receive a 412 and continue looking for other available tasks. This is all without the workers coordinating or being aware of each other.</p>
 <p><strong>State transitions</strong>: using the same pattern, workers update the status of tasks from pending, running, completed. If a worker crashes and the lease expires, a new worker will be able to pick up the task and continue. If the worker recovers, it's not possible for it to corrupt the task state due to its ETag being stale.</p>
 <p><strong>Duplication prevention</strong>: Task submission uses <code>If-None-Match: *</code> ensuring each task is only submitted exactly once.</p>
 <p><strong>Audit trails</strong>: S3 versioning allows built-in state management logging: no need to review logs to understand what happened when - the task object is the only source of truth.</p>
@@ -29,10 +29,9 @@
 <p><strong>Simpler infrastructure and ops</strong>: one bucket vs database + broker + cache + coordination service
 <strong>Cost</strong>: Object storage is cheap. Rough estimations put it at about $100/month for 1 million tasks.
 <strong>Transparency</strong>: no need to understand complex distributed systems managing your tasks - everything is just an object in S3 - inspection, debugging, and fixing is trivial: <code>aws s3 cp &lt;task_path&gt;</code>.</p>
-<h2><code>qow</code>: Workflows on Object (Storage)</h2>
-<p><em>Note</em>: <code>wo</code> would have been more consistent, but I couldn't resist having it pronounced as cow.</p>
-<p>Built on <code>qo</code> primitives, <code>qow</code> adds workflow orchestration: DAGs with task dependencies, fan-out/fan-in patterns, conditional branching, and signaling.
+<h2><code>buquet</code> Workflows</h2>
+<p>Built on <code>buquet</code> primitives, <code>buquet</code> workflows adds workflow orchestration: DAGs with task dependencies, fan-out/fan-in patterns, conditional branching, and signaling.
 Same architecture, more power, same S3-only simplicity.</p>
 <hr />
-<p>First turbopuffer, now <code>qo</code>. What else can we build on S3?</p>
-<p>Source code available <a href="https://github.com/h0rv/qo">here</a>.</p></article></body></html>
+<p>First turbopuffer, now <code>buquet</code>. What else can we build on S3?</p>
+<p>Source code available <a href="https://github.com/h0rv/buquet">here</a>.</p></article></body></html>

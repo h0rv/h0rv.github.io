@@ -35,9 +35,10 @@ posts = []
 for f in Path("content/blog").glob("*.md"):
     text = f.read_text(encoding='utf-8-sig')  # Strip BOM if present
     title_raw = text.split('\n')[0].replace('#', '').strip()
+    title_plain = title_raw.replace('`', '')
     title_html = markdown.markdown(title_raw, extensions=['fenced_code', 'codehilite']).replace('<p>', '').replace('</p>', '').strip()
     date = text.split('\n')[1].strip()
-    Path(f"public/{f.stem}.html").write_text(html(title_html, markdown.markdown(text), nav))
+    Path(f"public/{f.stem}.html").write_text(html(title_plain, markdown.markdown(text), nav))
     posts.append((title_html, date, f.stem))
 
 posts.sort(key=lambda p: p[1], reverse=True)

@@ -3,6 +3,12 @@ What I am reading, listening, and watching
 
 ## 2026
 
+### Feburary
+
+* 4th
+    * [A Software Library with No Code](https://www.dbreunig.com/2026/01/08/a-software-library-with-no-code.html)
+    * [A few random notes from claude coding quite a bit last few weeks.](https://x.com/karpathy/status/2015883857489522876#m)
+
 ### January
 
 * 31st

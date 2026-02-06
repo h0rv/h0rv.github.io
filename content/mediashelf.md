@@ -5,6 +5,14 @@ What I am reading, listening, and watching
 
 ### Feburary
 
+* 6th
+    * [State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI | Lex Fridman Podcast #490](https://youtu.be/EV7WhVT270Q?si=Q7gEo-rhXu7kTsYR)
+
+* 5th
+    * [how do I stop participating?](https://geohot.github.io/blog/jekyll/update/2026/01/18/how-do-i-stop.html)
+    * [you have three minutes to escape the perpetual underclass](https://geohot.github.io/blog/jekyll/update/2026/01/17/three-minutes.html)
+    * [George Hotz | Programming | how I actually use agentic coding | Agentic AI](https://youtu.be/erBX3gTZqJI?si=A4Ggiv43Xkk9euLV)
+
 * 4th
     * [A Software Library with No Code](https://www.dbreunig.com/2026/01/08/a-software-library-with-no-code.html)
     * [A few random notes from claude coding quite a bit last few weeks.](https://x.com/karpathy/status/2015883857489522876#m)

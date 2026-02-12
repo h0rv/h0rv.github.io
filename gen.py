@@ -28,7 +28,9 @@ def html(title, body, nav=''):
            f'<title>{title}</title>' \
            '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tufte-css@1.8.0/tufte.min.css">' \
            '<style>nav{padding:1rem 0;font-size:1.05rem}nav a{padding:0.5rem}article{padding-bottom:1rem}@media(max-width:760px){nav a{display:inline-block;padding:0.5rem 0.75rem}}</style>' \
-           f'</head><body><nav>{nav}</nav><article>{body}</article></body></html>'
+           f'</head><body><nav>{nav}</nav><article>{body}</article>' \
+           '<script data-goatcounter="https://h0rv.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>' \
+           '</body></html>'
 
 # Generate blog posts
 posts = []

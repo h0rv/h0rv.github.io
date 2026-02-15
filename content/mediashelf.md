@@ -5,6 +5,9 @@ What I am reading, listening, and watching
 
 ### Feburary
 
+* 15th
+    * [Breaking the Spell of Vibe Coding](https://www.fast.ai/posts/2026-01-28-dark-flow/)
+
 * 6th
     * [State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI | Lex Fridman Podcast #490](https://youtu.be/EV7WhVT270Q?si=Q7gEo-rhXu7kTsYR)
 

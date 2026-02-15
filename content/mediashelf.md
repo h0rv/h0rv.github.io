@@ -6,6 +6,7 @@ What I am reading, listening, and watching
 ### Feburary
 
 * 15th
+    * [Fragments: February 13](https://martinfowler.com/fragments/2026-02-13.html)
     * [Breaking the Spell of Vibe Coding](https://www.fast.ai/posts/2026-01-28-dark-flow/)
 
 * 6th

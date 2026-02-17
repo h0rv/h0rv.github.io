@@ -5,6 +5,10 @@ What I am reading, listening, and watching
 
 ### Feburary
 
+* 17th
+    * [I Improved 15 LLMs at Coding in One Afternoon. Only the Harness Changed.](https://blog.can.ac/2026/02/12/the-harness-problem/)
+    * [Do Metaprojects](https://taylor.town/wealth-001)
+
 * 15th
     * [Fragments: February 13](https://martinfowler.com/fragments/2026-02-13.html)
     * [Breaking the Spell of Vibe Coding](https://www.fast.ai/posts/2026-01-28-dark-flow/)

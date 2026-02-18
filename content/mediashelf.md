@@ -5,7 +5,11 @@ What I am reading, listening, and watching
 
 ### Feburary
 
+* 18th
+    * [How to make something great](https://ryolu.notion.site/how-to-make-something-great)
+
 * 17th
+    * Finished [_Permutaion City_](https://en.wikipedia.org/wiki/Permutation_City)
     * [I Improved 15 LLMs at Coding in One Afternoon. Only the Harness Changed.](https://blog.can.ac/2026/02/12/the-harness-problem/)
     * [Do Metaprojects](https://taylor.town/wealth-001)
 

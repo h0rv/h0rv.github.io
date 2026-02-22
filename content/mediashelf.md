@@ -5,6 +5,9 @@ What I am reading, listening, and watching
 
 ### Feburary
 
+* 21st
+    * [Child’s Play: Tech’s new generation and the end of thinking](https://harpers.org/archive/2026/03/childs-play-sam-kriss-ai-startup-roy-lee/)
+
 * 18th
     * [How to make something great](https://ryolu.notion.site/how-to-make-something-great)
 

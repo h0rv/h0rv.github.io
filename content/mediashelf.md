@@ -5,6 +5,11 @@ What I am reading, listening, and watching
 
 ### Feburary
 
+* 24th
+    * [The Mind's A Field](https://www.marginalia.nu/log/05-minds-field/)
+    * [Feynman's Garden](https://www.marginalia.nu/log/a_108_feynman_revisited/)
+    * [AI makes you boring](https://www.marginalia.nu/log/a_132_ai_bores/)
+
 * 21st
     * [Child’s Play: Tech’s new generation and the end of thinking](https://harpers.org/archive/2026/03/childs-play-sam-kriss-ai-startup-roy-lee/)
 

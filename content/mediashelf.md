@@ -5,6 +5,9 @@ What I am reading, listening, and watching
 
 ### Feburary
 
+* 26th
+    * [10 Years Building Vertical Software: My Perspective on the Selloff](https://x.com/nicbstme/status/2023501562480644501?s=20)
+
 * 25th
     * [WTF Happened in 2025?](https://wtfhappened2025.com/)
 

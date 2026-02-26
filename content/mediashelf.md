@@ -5,6 +5,9 @@ What I am reading, listening, and watching
 
 ### Feburary
 
+* 25th
+    * [WTF Happened in 2025?](https://wtfhappened2025.com/)
+
 * 24th
     * [The Mind's A Field](https://www.marginalia.nu/log/05-minds-field/)
     * [Feynman's Garden](https://www.marginalia.nu/log/a_108_feynman_revisited/)

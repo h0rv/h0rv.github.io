@@ -5,6 +5,9 @@ What I am reading, listening, and watching
 
 ### March
 
+* 12th
+    * [The Sentinel Object Pattern](https://python-patterns.guide/python/sentinel-object/)
+
 * 6th
     * [Most Widely Deployed and Used Database Engine](https://www.sqlite.org/mostdeployed.html)
     * [Your LLM Doesn't Write Correct Code. It Writes Plausible Code.](https://open.substack.com/pub/katanaquant/p/your-llm-doesnt-write-correct-code?utm_source=share&utm_medium=android&r=1vdjmf)

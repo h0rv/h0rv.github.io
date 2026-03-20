@@ -5,6 +5,9 @@ What I am reading, listening, and watching
 
 ### March
 
+* 20th
+    * [American Diner Gothic](https://www.thenewatlantis.com/publications/american-diner-gothic)
+
 * 12th
     * [The Sentinel Object Pattern](https://python-patterns.guide/python/sentinel-object/)
 

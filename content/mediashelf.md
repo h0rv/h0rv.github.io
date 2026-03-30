@@ -5,6 +5,13 @@ What I am reading, listening, and watching
 
 ### March
 
+* 29th
+    * [Only 16 People a Night Can Eat This 17-Course Omakase ](https://youtu.be/3ptagZOU_Wg?si=S4Url_9HULQp939kk)
+    * [This Deli Turns Into Philadelphia’s Best New Restaurant at Night](https://youtu.be/4yvJ6pExT0o?si=F0iDDTimQdlo8y1Q)
+    * [The #1 Cheesesteak In Philly That Won a Michelin Award](https://youtu.be/aj9cYLcIGLY?si=lYt3aBdP5uYHx1H5)
+    * [Review: Middle Child Clubhouse is an engaging new restaurant balancing familiarity with clever remakes](https://www.inquirer.com/food/craig-laban/middle-child-clubhouse-restaurant-review-20220228.html)
+    * [The Cognitive Dark Forest](https://ryelang.org/blog/posts/cognitive-dark-forest/)
+
 * 20th
     * [American Diner Gothic](https://www.thenewatlantis.com/publications/american-diner-gothic)
 

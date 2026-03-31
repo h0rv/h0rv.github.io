@@ -5,6 +5,9 @@ What I am reading, listening, and watching
 
 ### March
 
+* 31st
+    * [Seeing like a spreadsheet: How the commercial spreadsheet reshaped America](https://davidoks.blog/p/how-the-spreadsheet-reshaped-america)
+
 * 29th
     * [Only 16 People a Night Can Eat This 17-Course Omakase ](https://youtu.be/3ptagZOU_Wg?si=S4Url_9HULQp939kk)
     * [This Deli Turns Into Philadelphia’s Best New Restaurant at Night](https://youtu.be/4yvJ6pExT0o?si=F0iDDTimQdlo8y1Q)

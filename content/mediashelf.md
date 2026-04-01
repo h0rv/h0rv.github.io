@@ -3,6 +3,11 @@ What I am reading, listening, and watching
 
 ## 2026
 
+### April
+
+* 1st
+    * [The New World: Joshua Kushner, Thrive Capital, and the American dream](https://colossus.com/article/joshua-kushner-thrive-new-world/)
+
 ### March
 
 * 31st

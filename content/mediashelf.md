@@ -6,6 +6,7 @@ What I am reading, listening, and watching
 ### April
 
 * 1st
+    * [Inside Cursor: Sixty days with the AI coding decacorn](https://colossus.com/article/inside-cursor/)
     * [The New World: Joshua Kushner, Thrive Capital, and the American dream](https://colossus.com/article/joshua-kushner-thrive-new-world/)
 
 ### March

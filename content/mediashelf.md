@@ -5,6 +5,13 @@ What I am reading, listening, and watching
 
 ### April
 
+* 5th
+    * [The Anti-Social Century](https://www.theatlantic.com/magazine/archive/2025/02/american-loneliness-personality-politics/681091/)
+
+* 4th
+    * [The Education of the Broligarchy](https://colossus.com/article/education-broligarchy-silicon-valley-canon/)
+    * [The Monks in the Casino](https://open.substack.com/pub/derekthompson/p/the-monks-in-the-casino?utm_campaign=post-expanded-share&utm_medium=web)
+
 * 1st
     * [Inside Cursor: Sixty days with the AI coding decacorn](https://colossus.com/article/inside-cursor/)
     * [The New World: Joshua Kushner, Thrive Capital, and the American dream](https://colossus.com/article/joshua-kushner-thrive-new-world/)

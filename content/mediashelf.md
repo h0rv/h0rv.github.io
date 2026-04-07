@@ -5,6 +5,10 @@ What I am reading, listening, and watching
 
 ### April
 
+* 6th
+    * [Devon Zuegel is Building a New Town](https://colossus.com/article/devon-zuegel-new-town/)
+    * [Why a ‘Boring’ Life Might Be the Happiest One](https://karunpal.substack.com/p/why-a-boring-life-might-be-the-happiest)
+
 * 5th
     * [The Anti-Social Century](https://www.theatlantic.com/magazine/archive/2025/02/american-loneliness-personality-politics/681091/)
 

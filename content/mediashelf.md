@@ -5,6 +5,9 @@ What I am reading, listening, and watching
 
 ### April
 
+* 8th
+    * [Sam Altman May Control Our Future—Can He Be Trusted?](https://www.newyorker.com/magazine/2026/04/13/sam-altman-may-control-our-future-can-he-be-trusted)
+
 * 6th
     * [Devon Zuegel is Building a New Town](https://colossus.com/article/devon-zuegel-new-town/)
     * [Why a ‘Boring’ Life Might Be the Happiest One](https://karunpal.substack.com/p/why-a-boring-life-might-be-the-happiest)

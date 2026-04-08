@@ -6,6 +6,7 @@ from pathlib import Path
 import markdown, re, shutil
 
 Path("public").mkdir(exist_ok=True)
+(Path("public") / "resume.html").unlink(missing_ok=True)
 
 # Copy non-markdown files from content/
 for f in Path("content").rglob("*"):
@@ -20,6 +21,7 @@ for f in Path("content").glob("*.md"):
     if f.stem != 'index':
         name = f.stem.replace('-', ' ').title()
         nav_pages.append((name, f"{f.stem}.html"))
+nav_pages.append(('Resume', 'resume/'))
 nav = ' · '.join(f'<a href="{link}">{name}</a>' for name, link in nav_pages)
 
 def html(title, body, nav='', footer=''):
@@ -63,4 +65,45 @@ Path("public/mediashelf.html").write_text(
     html("Mediashelf", markdown.markdown(Path("content/mediashelf.md").read_text()), nav)
 )
 
-print(f"✓ Generated {len(posts)} posts + index + mediashelf")
+# Publish the standalone resume section without mixing it into content/
+resume_dir = Path("resume")
+if resume_dir.exists():
+    shutil.copytree(resume_dir, Path("public/resume"), dirs_exist_ok=True)
+    resume_html = (resume_dir / "resume.html").read_text(encoding="utf-8")
+    resume_html = resume_html.replace(
+        "</style>",
+        """
+.site-resume-nav {
+    max-width: 800px;
+    margin: 0 auto 24px;
+    text-align: left;
+    font: 14px/1.4 "Helvetica Neue", Arial, sans-serif;
+}
+.site-resume-nav a {
+    color: #1d4ed8;
+    text-decoration: none;
+    margin: 0 0.35rem;
+}
+.site-resume-nav a:hover {
+    text-decoration: underline;
+}
+@media print {
+    .site-resume-nav {
+        display: none;
+    }
+}
+</style>
+""",
+        1,
+    )
+    resume_links = (
+        '<div class="site-resume-nav">'
+        '<a href="../index.html">Home</a> · '
+        '<a href="resume.pdf" target="_blank" rel="noopener">Open PDF</a> · '
+        '<a href="resume.pdf" download>Download PDF</a>'
+        '</div>'
+    )
+    resume_html = resume_html.replace("<body>", f"<body>{resume_links}", 1)
+    Path("public/resume/index.html").write_text(resume_html, encoding="utf-8")
+
+print(f"✓ Generated {len(posts)} posts + index + mediashelf + resume")

@@ -30,7 +30,7 @@ def html(title, body, nav='', footer=''):
            f'<title>{title}</title>' \
            '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tufte-css@1.8.0/tufte.min.css">' \
            '<style>nav{padding:1rem 0;font-size:1.05rem}nav a{padding:0.5rem}article{padding-bottom:1rem}@media(max-width:760px){nav a{display:inline-block;padding:0.5rem 0.75rem}}</style>' \
-           f'</head><body><nav>{nav}</nav><article>{body}</article>{footer}' \
+           f'</head><body><nav>{nav}</nav><article><section>{body}</section></article>{footer}' \
            '<script data-goatcounter="https://h0rv.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>' \
            '</body></html>'
 

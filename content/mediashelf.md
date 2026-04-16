@@ -5,6 +5,10 @@ What I am reading, listening, and watching
 
 ### April
 
+* 16th
+    * [Thoughts on slowing the fuck down](https://mariozechner.at/posts/2026-03-25-thoughts-on-slowing-the-fuck-down/)
+    * [I've sold out](https://mariozechner.at/posts/2026-04-08-ive-sold-out/)
+
 * 8th
     * [Sam Altman May Control Our Future—Can He Be Trusted?](https://www.newyorker.com/magazine/2026/04/13/sam-altman-may-control-our-future-can-he-be-trusted)
 

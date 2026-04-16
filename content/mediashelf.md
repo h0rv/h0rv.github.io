@@ -6,8 +6,12 @@ What I am reading, listening, and watching
 ### April
 
 * 16th
+    * [Claude Code is overkill - Pi is All you Need](https://youtu.be/AEmHcFH1UgQ)
     * [Thoughts on slowing the fuck down](https://mariozechner.at/posts/2026-03-25-thoughts-on-slowing-the-fuck-down/)
     * [I've sold out](https://mariozechner.at/posts/2026-04-08-ive-sold-out/)
+
+* 14th
+    * Finished [_A Life in Parts_ by  Bryan Cranston](https://en.wikipedia.org/wiki/A_Life_in_Parts)
 
 * 8th
     * [Sam Altman May Control Our Future—Can He Be Trusted?](https://www.newyorker.com/magazine/2026/04/13/sam-altman-may-control-our-future-can-he-be-trusted)
@@ -69,7 +73,7 @@ What I am reading, listening, and watching
     * [How to make something great](https://ryolu.notion.site/how-to-make-something-great)
 
 * 17th
-    * Finished [_Permutaion City_](https://en.wikipedia.org/wiki/Permutation_City)
+    * Finished [_Permutaion City_ by Greg Egan](https://en.wikipedia.org/wiki/Permutation_City)
     * [I Improved 15 LLMs at Coding in One Afternoon. Only the Harness Changed.](https://blog.can.ac/2026/02/12/the-harness-problem/)
     * [Do Metaprojects](https://taylor.town/wealth-001)
 

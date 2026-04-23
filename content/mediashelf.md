@@ -5,6 +5,10 @@ What I am reading, listening, and watching
 
 ### April
 
+* 22nd
+    * [Hell’s Kitchen: Getting through the day—and night—with a New York chef.](https://www.newyorker.com/magazine/2021/09/06/magazine20000417hells-kitchen)
+    * [Don’t Eat Before Reading This](https://www.newyorker.com/magazine/1999/04/19/dont-eat-before-reading-this)
+
 * 16th
     * [Claude Code is overkill - Pi is All you Need](https://youtu.be/AEmHcFH1UgQ)
     * [Thoughts on slowing the fuck down](https://mariozechner.at/posts/2026-03-25-thoughts-on-slowing-the-fuck-down/)

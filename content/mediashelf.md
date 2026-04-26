@@ -5,6 +5,9 @@ What I am reading, listening, and watching
 
 ### April
 
+* 26th
+    * [What Async Promised and What it Delivered](https://causality.blog/essays/what-async-promised/)
+
 * 25th
     * [What is Zig's Comptime?](https://kristoff.it/blog/what-is-zig-comptime/)
     * [Crimes with Go Generics](https://xeiaso.net/blog/gonads-2022-04-24/)

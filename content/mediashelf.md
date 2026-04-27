@@ -5,6 +5,9 @@ What I am reading, listening, and watching
 
 ### April
 
+* 27th
+    * [If America's So Rich, How'd It Get So Sad?: Or: How the 2020s broke our brains](https://substack.com/home/post/p-194392593)
+
 * 26th
     * [What Async Promised and What it Delivered](https://causality.blog/essays/what-async-promised/)
 

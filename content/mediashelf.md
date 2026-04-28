@@ -5,7 +5,11 @@ What I am reading, listening, and watching
 
 ### April
 
+* 28th
+    * [The spelled-out intro to neural networks and backpropagation: building micrograd](https://youtu.be/VMj-3S1tku0?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)
+
 * 27th
+    * [_Hell Yeah or No: what’s worth doing_ by Derek Sivers](https://sive.rs/n)
     * [If America's So Rich, How'd It Get So Sad?: Or: How the 2020s broke our brains](https://substack.com/home/post/p-194392593)
 
 * 26th

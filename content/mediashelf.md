@@ -3,7 +3,13 @@ What I am reading, listening, and watching
 
 ## 2026
 
+### May
+
 ### April
+
+* 30th
+    * [Skill Issue: Andrej Karpathy on Code Agents, AutoResearch, and the Loopy Era of AI](https://youtu.be/kwSVtQ7dziU)
+    * [The spelled-out intro to language modeling: building makemore](https://youtu.be/PaCmpygFfXo)
 
 * 28th
     * [The spelled-out intro to neural networks and backpropagation: building micrograd](https://youtu.be/VMj-3S1tku0?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)

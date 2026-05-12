@@ -5,6 +5,12 @@ What I am reading, listening, and watching
 
 ### May
 
+* 12th
+    * [The Wu Tapes](https://colossus.com/article/scott-wu-tapes-cognition/)
+
+* 11th
+    * [Dario Amodei — "We are near the end of the exponential"](https://www.dwarkesh.com/p/dario-amodei-2)
+
 ### April
 
 * 30th

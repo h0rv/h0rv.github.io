@@ -5,6 +5,12 @@ What I am reading, listening, and watching
 
 ### May
 
+* 15th
+    * [Building Thrive Capital with Josh Kushner](https://colossus.com/episode/kushner-building-thrive-capital/)
+
+* 13th
+    * [Concentration and Conviction with Josh Kushner](https://colossus.com/episode/concentration-and-conviction/)
+
 * 12th
     * [The Wu Tapes](https://colossus.com/article/scott-wu-tapes-cognition/)
 

@@ -5,6 +5,9 @@ What I am reading, listening, and watching
 
 ### May
 
+* 18th
+    * [_The Founder_ (2016)](https://en.wikipedia.org/wiki/The_Founder)
+
 * 15th
     * [Building Thrive Capital with Josh Kushner](https://colossus.com/episode/kushner-building-thrive-capital/)
 

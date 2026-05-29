@@ -5,6 +5,20 @@ What I am reading, listening, and watching
 
 ### May
 
+* 29th
+    * [Lesson 3: Practical Deep Learning for Coders 2022](https://youtu.be/hBBOjCiFcuo)
+
+* 28th
+    * [Lesson 4: Practical Deep Learning for Coders 2022](https://youtu.be/toUgBQv1BT8)
+    * [Lesson 2: Practical Deep Learning for Coders 2022](https://youtu.be/F4tvM4Vb3A0)
+
+* 27th
+    * [Practical Deep Learning for Coders: Lesson 1](https://youtu.be/8SF_h3xF3cE)
+    * [Building makemore Part 3: Activations & Gradients, BatchNorm](https://youtu.be/P6sfmUTpUmc)
+
+* 25th
+    * [Building makemore Part 2: MLP](https://youtu.be/TCH_1BHY58I)
+
 * 18th
     * [_The Founder_ (2016)](https://en.wikipedia.org/wiki/The_Founder)
 

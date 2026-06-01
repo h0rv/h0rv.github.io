@@ -3,10 +3,12 @@ What I am reading, listening, and watching
 
 ## 2026
 
-### May
+### June
 
-* 29th
+* 1st
     * [Lesson 3: Practical Deep Learning for Coders 2022](https://youtu.be/hBBOjCiFcuo)
+
+### May
 
 * 28th
     * [Lesson 4: Practical Deep Learning for Coders 2022](https://youtu.be/toUgBQv1BT8)

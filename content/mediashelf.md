@@ -5,6 +5,10 @@ What I am reading, listening, and watching
 
 ### June
 
+* 3rd
+    * [Lesson 8: Practical Deep Learning for Coders 2022](https://youtu.be/htiNBPxcXgo)
+    * [Lesson 7: Practical Deep Learning for Coders 2022](https://youtu.be/p4ZZq0736Po)
+
 * 2nd
     * [Lesson 6: Practical Deep Learning for Coders 2022](https://youtu.be/AdhG64NF76E)
     * [Lesson 5: Practical Deep Learning for Coders 2022](https://youtu.be/_rXzeWq4C6w)

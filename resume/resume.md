@@ -15,6 +15,10 @@ is intended to be used for a short summary. -->
 <!-- You have to wrap the "left" and "right" half of these headings in spans by
 hand -->
 
+### <span>Senior Platform Engineer - Anatomy Financial</span> <span>June 2026 -- Current</span>
+
+  San Francisco, CA (Remote)
+
 ### <span>Software Engineer - Sweetspot</span> <span>July 2025 -- April 2026</span>
 
   New York, NY (Hybrid) - Early engineering hire at a seed-stage startup

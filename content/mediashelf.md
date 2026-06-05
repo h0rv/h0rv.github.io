@@ -5,6 +5,9 @@ What I am reading, listening, and watching
 
 ### June
 
+* 5th
+    * [Emotional management](https://www.scattered-thoughts.net/writing/emotional-management/)
+
 * 3rd
     * [Lesson 8: Practical Deep Learning for Coders 2022](https://youtu.be/htiNBPxcXgo)
     * [Lesson 7: Practical Deep Learning for Coders 2022](https://youtu.be/p4ZZq0736Po)

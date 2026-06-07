@@ -6,6 +6,7 @@ What I am reading, listening, and watching
 ### June
 
 * 7th
+    * [How LLMs Actually Work](https://www.0xkato.xyz/how-llms-actually-work/)
     * [Let's build GPT: from scratch, in code, spelled out.](https://youtu.be/kCc8FmEb1nY)
 
 * 5th

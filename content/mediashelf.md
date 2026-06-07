@@ -5,6 +5,9 @@ What I am reading, listening, and watching
 
 ### June
 
+* 7th
+    * [Let's build GPT: from scratch, in code, spelled out.](https://youtu.be/kCc8FmEb1nY)
+
 * 5th
     * [Emotional management](https://www.scattered-thoughts.net/writing/emotional-management/)
 

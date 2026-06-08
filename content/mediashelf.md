@@ -5,6 +5,10 @@ What I am reading, listening, and watching
 
 ### June
 
+* 8th
+    * [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
+        * Finally read it lol
+
 * 7th
     * [How LLMs Actually Work](https://www.0xkato.xyz/how-llms-actually-work/)
     * [Let's build GPT: from scratch, in code, spelled out.](https://youtu.be/kCc8FmEb1nY)

@@ -5,6 +5,9 @@ What I am reading, listening, and watching
 
 ### June
 
+* 21st
+    * [Loop Engineering](https://addyosmani.com/blog/loop-engineering/)
+
 * 8th
     * [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
         * Finally read it lol

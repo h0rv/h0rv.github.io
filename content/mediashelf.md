@@ -3,6 +3,11 @@ What I am reading, listening, and watching
 
 ## 2026
 
+### July
+
+* 26th
+    * [Don't Take the Black Pill - Andrew Kelley | SSW 2026](https://youtu.be/zLZwpH5lCD4)
+
 ### June
 
 * 21st

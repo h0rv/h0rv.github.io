@@ -3,6 +3,14 @@ What I am reading, listening, and watching
 
 ## 2026
 
+### August
+
+* 6th
+    * [_The Creative Act: A Way of Being_ by Rick Rubin](https://sites.prh.com/thecreativeact)
+
+* 5th
+    * [Pi’s Minimalism Is Its Advantage](https://earendil.com/posts/pi-autoresearch-and-databricks/)
+
 ### July
 
 * 26th

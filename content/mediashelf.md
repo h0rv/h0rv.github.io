@@ -5,8 +5,11 @@ What I am reading, listening, and watching
 
 ### August
 
+* 28th
+    * [2nd listen of _Kitchen Confidential_ by Anthony Bourdain (exceptional audiobook)](https://en.wikipedia.org/wiki/Kitchen_Confidential)
+
 * 20th
-    *[_Tony_ (2026)](https://a24films.com/films/tony)
+    * [_Tony_ (2026)](https://a24films.com/films/tony)
 
 * 6th
     * [_The Creative Act: A Way of Being_ by Rick Rubin](https://sites.prh.com/thecreativeact)

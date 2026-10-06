@@ -1,0 +1,67 @@
+# Projects, newest first. `site` is the live version (linked first), `repo` the source.
+# `description`: a line or two on what it is or why you built it.
+
+- name: bourdain-archive
+  year: 2026
+  site: https://horv.co/bourdain-archive/
+  repo: https://github.com/h0rv/bourdain-archive
+  description:
+
+- name: buquet
+  year: 2026
+  repo: https://github.com/h0rv/buquet
+  description:
+
+- name: instructor.zig
+  year: 2026
+  repo: https://github.com/h0rv/instructor.zig
+  description:
+
+- name: isophilly
+  year: 2026
+  repo: https://github.com/h0rv/isophilly
+  description:
+
+- name: opennoise
+  year: 2026
+  site: https://opennoise.horv.co
+  repo: https://github.com/h0rv/opennoise
+  description:
+
+- name: sprts
+  year: 2026
+  site: https://sprts.horv.co
+  repo: https://github.com/h0rv/sprts
+  description:
+
+- name: tinygpt
+  year: 2026
+  repo: https://github.com/h0rv/tinygpt
+  description:
+
+- name: zchema
+  year: 2026
+  repo: https://github.com/h0rv/zchema
+  description:
+
+- name: zeptograd
+  year: 2026
+  repo: https://github.com/h0rv/zeptograd
+  description:
+
+- name: d2-mcp
+  year: 2025
+  repo: https://github.com/h0rv/d2-mcp
+  description:
+
+- name: philly
+  year: 2025
+  site: https://philly.horv.co/
+  repo: https://github.com/h0rv/philly
+  description:
+
+- name: instructor-go
+  year: 2024
+  site: https://go.useinstructor.com/
+  repo: https://github.com/jxnl/instructor-go
+  description:

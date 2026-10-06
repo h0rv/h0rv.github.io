@@ -1,0 +1,16 @@
+---
+import PostRows from "../components/PostRows.astro";
+import Base from "../layouts/Base.astro";
+import { getPosts } from "../lib/content";
+
+const years = Map.groupBy(await getPosts(), (p) => p.data.date.getUTCFullYear());
+---
+
+<Base title="Writing">
+  {[...years].map(([year, posts]) => (
+    <section class="group">
+      <h2 class="group-head">{year}</h2>
+      <PostRows posts={posts} nested />
+    </section>
+  ))}
+</Base>

@@ -1,5 +1,7 @@
-# Hacking my Kobo Clara HD in 2024
-2024-03-31
+---
+title: "Hacking my Kobo Clara HD in 2024"
+date: 2024-03-31
+---
 
 This post is an extension of the great tutorial ["Hacking my Kobo Clara HD"](https://anarc.at/hardware/tablet/kobo-clara-hd), with the some extra details and clarifications from my experience.
 

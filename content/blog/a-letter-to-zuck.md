@@ -1,5 +1,7 @@
-# A Letter to Zuck
-2023-01-26
+---
+title: "A Letter to Zuck"
+date: 2023-01-26
+---
 
 To Zuck,
 

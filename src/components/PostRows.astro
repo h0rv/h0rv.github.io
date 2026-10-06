@@ -1,0 +1,20 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { inlineTitle, isoDate } from "../lib/content";
+
+interface Props {
+  posts: CollectionEntry<"blog">[];
+  /** indent under a year heading and show MM-DD (the year is the heading) */
+  nested?: boolean;
+}
+const { posts, nested = false } = Astro.props;
+---
+
+<ul class="rows" style={nested ? "--level: 1; --date-col: 6ch" : undefined} data-dm="rowpad:--row-pad">
+  {posts.map((p) => (
+    <li class="link-row">
+      <time class="meta" datetime={isoDate(p.data.date)}>{isoDate(p.data.date).slice(nested ? 5 : 0)}</time>
+      <a class="main" href={`/${p.id}`} set:html={inlineTitle(p.data.title)} />
+    </li>
+  ))}
+</ul>

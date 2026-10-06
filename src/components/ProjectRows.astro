@@ -1,0 +1,21 @@
+---
+import { getList } from "../lib/content";
+
+const projects = await getList("projects");
+---
+
+<ul class="rows">
+  {projects.map(({ data: p }) => (
+    <li class="link-row">
+      <span class="meta">{p.year}</span>
+      <span>
+        <a class="main" href={p.site ?? p.repo}>{p.name}</a>
+        {p.description && <span class="desc">{p.description}</span>}
+      </span>
+      <span class="links mono">
+        {p.site && <a href={p.site}>site ↗</a>}
+        <a href={p.repo}>source</a>
+      </span>
+    </li>
+  ))}
+</ul>

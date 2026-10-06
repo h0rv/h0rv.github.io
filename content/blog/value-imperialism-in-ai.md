@@ -1,5 +1,7 @@
-# Value Imperialism in the Future of Artificial Intelligence
-2023-10-27
+---
+title: "Value Imperialism in the Future of Artificial Intelligence"
+date: 2023-10-27
+---
 
 I wanted to share my final essay for a Philosophy of Science class focused on Artificial Intelligence from the Spring of my 2rd year in University - April 25, 2022 to be exact. This was my first and only Philosophy class I ever took. With that said, I really enjoyed the in-person discussions (that I was deprived of due to Covid-19 pandemic) and *some* of the readings. It was by far the most academic papers I had to read in a course (several weekly readings), which often resulted in having a strong urge to take a nap after 20 minutes of reading due to the density of the texts. I especially struggled with the metaphysical and abstract ideas becasue they really did not click for me which I just ended up getting boring. Nonetheless, it was one of my favorite courses I took in college, due greatly to the lecturer who had a great personality and was wickedly intelligent.
 

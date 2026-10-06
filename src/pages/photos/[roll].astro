@@ -1,0 +1,53 @@
+---
+import { getImage, Image } from "astro:assets";
+import { render } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import { getRolls, photosFor, rollMeta } from "../../lib/photos";
+
+export async function getStaticPaths() {
+  const rolls = await getRolls();
+  return rolls.map((roll) => ({ params: { roll: roll.id }, props: { roll } }));
+}
+
+const { roll } = Astro.props;
+const { Content } = await render(roll);
+// Full-size links point at a re-encoded copy (no metadata), never the source file.
+const photos = await Promise.all(
+  photosFor(roll).map(async (p) => ({
+    ...p,
+    full: await getImage({ src: p.src, width: Math.min(p.src.width, 2400), format: "jpeg" }),
+  })),
+);
+---
+
+<Base title={roll.data.title}>
+  <header class="post-head" data-dm="pad:--gutter">
+    <h1>{roll.data.title}</h1>
+    <p class="mono roll-meta">
+      {rollMeta(roll).join(" · ")}
+      {roll.data.tags.length > 0 && <span> · {roll.data.tags.map((t) => `#${t}`).join(" ")}</span>}
+    </p>
+  </header>
+  <div class="prose" data-dm="pad:--gutter width:--measure">
+    <Content />
+    {photos.length === 0 && (
+      <p class="mono">No photos yet. Drop them in content/photos/{roll.id}/ and run mise run photos.</p>
+    )}
+  </div>
+  <div class="photos" data-dm="pad:--gutter">
+    {photos.map((p) => (
+      <figure>
+        <a href={p.full.src}>
+          <Image
+            src={p.src}
+            alt={p.caption ?? ""}
+            widths={[800, 1600, 2400].filter((w) => w <= p.src.width)}
+            sizes="(min-width: 900px) 70vw, 100vw"
+          />
+        </a>
+        {p.caption && <figcaption class="mono">{p.caption}</figcaption>}
+      </figure>
+    ))}
+  </div>
+  <p class="prose mono"><a href="/photos">← All photos</a></p>
+</Base>

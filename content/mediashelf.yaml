@@ -1,0 +1,391 @@
+# Mediashelf: what I'm reading, listening to, and watching. Newest first.
+# kind: book | film | article | video | podcast | paper | post
+# Fields: date, kind, title, url; optional: by, note, quote
+
+- date: 2026-08-28
+  kind: book
+  title: "Kitchen Confidential"
+  by: "Anthony Bourdain"
+  url: https://en.wikipedia.org/wiki/Kitchen_Confidential
+  note: "2nd listen, exceptional audiobook"
+- date: 2026-08-20
+  kind: film
+  title: "Tony (2026)"
+  url: https://a24films.com/films/tony
+- date: 2026-08-06
+  kind: book
+  title: "The Creative Act: A Way of Being"
+  by: "Rick Rubin"
+  url: https://sites.prh.com/thecreativeact
+- date: 2026-08-05
+  kind: article
+  title: "Pi’s Minimalism Is Its Advantage"
+  url: https://earendil.com/posts/pi-autoresearch-and-databricks/
+- date: 2026-07-26
+  kind: video
+  title: "Don't Take the Black Pill - Andrew Kelley | SSW 2026"
+  url: https://youtu.be/zLZwpH5lCD4
+- date: 2026-06-21
+  kind: article
+  title: "Loop Engineering"
+  url: https://addyosmani.com/blog/loop-engineering/
+- date: 2026-06-08
+  kind: paper
+  title: "Attention Is All You Need"
+  url: https://arxiv.org/abs/1706.03762
+  note: "Finally read it lol"
+- date: 2026-06-07
+  kind: article
+  title: "How LLMs Actually Work"
+  url: https://www.0xkato.xyz/how-llms-actually-work/
+- date: 2026-06-07
+  kind: video
+  title: "Let's build GPT: from scratch, in code, spelled out."
+  url: https://youtu.be/kCc8FmEb1nY
+- date: 2026-06-05
+  kind: article
+  title: "Emotional management"
+  url: https://www.scattered-thoughts.net/writing/emotional-management/
+- date: 2026-06-03
+  kind: video
+  title: "Lesson 8: Practical Deep Learning for Coders 2022"
+  url: https://youtu.be/htiNBPxcXgo
+- date: 2026-06-03
+  kind: video
+  title: "Lesson 7: Practical Deep Learning for Coders 2022"
+  url: https://youtu.be/p4ZZq0736Po
+- date: 2026-06-02
+  kind: video
+  title: "Lesson 6: Practical Deep Learning for Coders 2022"
+  url: https://youtu.be/AdhG64NF76E
+- date: 2026-06-02
+  kind: video
+  title: "Lesson 5: Practical Deep Learning for Coders 2022"
+  url: https://youtu.be/_rXzeWq4C6w
+- date: 2026-06-01
+  kind: video
+  title: "Lesson 3: Practical Deep Learning for Coders 2022"
+  url: https://youtu.be/hBBOjCiFcuo
+- date: 2026-05-28
+  kind: video
+  title: "Lesson 4: Practical Deep Learning for Coders 2022"
+  url: https://youtu.be/toUgBQv1BT8
+- date: 2026-05-28
+  kind: video
+  title: "Lesson 2: Practical Deep Learning for Coders 2022"
+  url: https://youtu.be/F4tvM4Vb3A0
+- date: 2026-05-27
+  kind: video
+  title: "Practical Deep Learning for Coders: Lesson 1"
+  url: https://youtu.be/8SF_h3xF3cE
+- date: 2026-05-27
+  kind: video
+  title: "Building makemore Part 3: Activations & Gradients, BatchNorm"
+  url: https://youtu.be/P6sfmUTpUmc
+- date: 2026-05-25
+  kind: video
+  title: "Building makemore Part 2: MLP"
+  url: https://youtu.be/TCH_1BHY58I
+- date: 2026-05-18
+  kind: film
+  title: "The Founder (2016)"
+  url: https://en.wikipedia.org/wiki/The_Founder
+- date: 2026-05-15
+  kind: podcast
+  title: "Building Thrive Capital with Josh Kushner"
+  url: https://colossus.com/episode/kushner-building-thrive-capital/
+- date: 2026-05-13
+  kind: podcast
+  title: "Concentration and Conviction with Josh Kushner"
+  url: https://colossus.com/episode/concentration-and-conviction/
+- date: 2026-05-12
+  kind: article
+  title: "The Wu Tapes"
+  url: https://colossus.com/article/scott-wu-tapes-cognition/
+- date: 2026-05-11
+  kind: article
+  title: "Dario Amodei — \"We are near the end of the exponential\""
+  url: https://www.dwarkesh.com/p/dario-amodei-2
+- date: 2026-04-30
+  kind: video
+  title: "Skill Issue: Andrej Karpathy on Code Agents, AutoResearch, and the Loopy Era of AI"
+  url: https://youtu.be/kwSVtQ7dziU
+- date: 2026-04-30
+  kind: video
+  title: "The spelled-out intro to language modeling: building makemore"
+  url: https://youtu.be/PaCmpygFfXo
+- date: 2026-04-28
+  kind: video
+  title: "The spelled-out intro to neural networks and backpropagation: building micrograd"
+  url: https://youtu.be/VMj-3S1tku0?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ
+- date: 2026-04-27
+  kind: book
+  title: "Hell Yeah or No: what’s worth doing"
+  by: "Derek Sivers"
+  url: https://sive.rs/n
+- date: 2026-04-27
+  kind: article
+  title: "If America's So Rich, How'd It Get So Sad?: Or: How the 2020s broke our brains"
+  url: https://substack.com/home/post/p-194392593
+- date: 2026-04-26
+  kind: article
+  title: "What Async Promised and What it Delivered"
+  url: https://causality.blog/essays/what-async-promised/
+- date: 2026-04-25
+  kind: article
+  title: "What is Zig's Comptime?"
+  url: https://kristoff.it/blog/what-is-zig-comptime/
+- date: 2026-04-25
+  kind: article
+  title: "Crimes with Go Generics"
+  url: https://xeiaso.net/blog/gonads-2022-04-24/
+- date: 2026-04-22
+  kind: article
+  title: "Hell’s Kitchen: Getting through the day—and night—with a New York chef."
+  url: https://www.newyorker.com/magazine/2021/09/06/magazine20000417hells-kitchen
+- date: 2026-04-22
+  kind: article
+  title: "Don’t Eat Before Reading This"
+  url: https://www.newyorker.com/magazine/1999/04/19/dont-eat-before-reading-this
+- date: 2026-04-16
+  kind: video
+  title: "Claude Code is overkill - Pi is All you Need"
+  url: https://youtu.be/AEmHcFH1UgQ
+- date: 2026-04-16
+  kind: article
+  title: "Thoughts on slowing the fuck down"
+  url: https://mariozechner.at/posts/2026-03-25-thoughts-on-slowing-the-fuck-down/
+- date: 2026-04-16
+  kind: article
+  title: "I've sold out"
+  url: https://mariozechner.at/posts/2026-04-08-ive-sold-out/
+- date: 2026-04-14
+  kind: book
+  title: "A Life in Parts"
+  by: "Bryan Cranston"
+  url: https://en.wikipedia.org/wiki/A_Life_in_Parts
+  note: "finished"
+- date: 2026-04-08
+  kind: article
+  title: "Sam Altman May Control Our Future—Can He Be Trusted?"
+  url: https://www.newyorker.com/magazine/2026/04/13/sam-altman-may-control-our-future-can-he-be-trusted
+- date: 2026-04-06
+  kind: article
+  title: "Devon Zuegel is Building a New Town"
+  url: https://colossus.com/article/devon-zuegel-new-town/
+- date: 2026-04-06
+  kind: article
+  title: "Why a ‘Boring’ Life Might Be the Happiest One"
+  url: https://karunpal.substack.com/p/why-a-boring-life-might-be-the-happiest
+- date: 2026-04-05
+  kind: article
+  title: "The Anti-Social Century"
+  url: https://www.theatlantic.com/magazine/archive/2025/02/american-loneliness-personality-politics/681091/
+- date: 2026-04-04
+  kind: article
+  title: "The Education of the Broligarchy"
+  url: https://colossus.com/article/education-broligarchy-silicon-valley-canon/
+- date: 2026-04-04
+  kind: article
+  title: "The Monks in the Casino"
+  url: https://open.substack.com/pub/derekthompson/p/the-monks-in-the-casino?utm_campaign=post-expanded-share&utm_medium=web
+- date: 2026-04-01
+  kind: article
+  title: "Inside Cursor: Sixty days with the AI coding decacorn"
+  url: https://colossus.com/article/inside-cursor/
+- date: 2026-04-01
+  kind: article
+  title: "The New World: Joshua Kushner, Thrive Capital, and the American dream"
+  url: https://colossus.com/article/joshua-kushner-thrive-new-world/
+- date: 2026-03-31
+  kind: article
+  title: "Seeing like a spreadsheet: How the commercial spreadsheet reshaped America"
+  url: https://davidoks.blog/p/how-the-spreadsheet-reshaped-america
+- date: 2026-03-29
+  kind: video
+  title: "Only 16 People a Night Can Eat This 17-Course Omakase"
+  url: https://youtu.be/3ptagZOU_Wg?si=S4Url_9HULQp939kk
+- date: 2026-03-29
+  kind: video
+  title: "This Deli Turns Into Philadelphia’s Best New Restaurant at Night"
+  url: https://youtu.be/4yvJ6pExT0o?si=F0iDDTimQdlo8y1Q
+- date: 2026-03-29
+  kind: video
+  title: "The #1 Cheesesteak In Philly That Won a Michelin Award"
+  url: https://youtu.be/aj9cYLcIGLY?si=lYt3aBdP5uYHx1H5
+- date: 2026-03-29
+  kind: article
+  title: "Review: Middle Child Clubhouse is an engaging new restaurant balancing familiarity with clever remakes"
+  url: https://www.inquirer.com/food/craig-laban/middle-child-clubhouse-restaurant-review-20220228.html
+- date: 2026-03-29
+  kind: article
+  title: "The Cognitive Dark Forest"
+  url: https://ryelang.org/blog/posts/cognitive-dark-forest/
+- date: 2026-03-20
+  kind: article
+  title: "American Diner Gothic"
+  url: https://www.thenewatlantis.com/publications/american-diner-gothic
+- date: 2026-03-12
+  kind: article
+  title: "The Sentinel Object Pattern"
+  url: https://python-patterns.guide/python/sentinel-object/
+- date: 2026-03-06
+  kind: article
+  title: "Most Widely Deployed and Used Database Engine"
+  url: https://www.sqlite.org/mostdeployed.html
+- date: 2026-03-06
+  kind: article
+  title: "Your LLM Doesn't Write Correct Code. It Writes Plausible Code."
+  url: https://open.substack.com/pub/katanaquant/p/your-llm-doesnt-write-correct-code?utm_source=share&utm_medium=android&r=1vdjmf
+- date: 2026-02-26
+  kind: post
+  title: "10 Years Building Vertical Software: My Perspective on the Selloff"
+  url: https://x.com/nicbstme/status/2023501562480644501?s=20
+- date: 2026-02-25
+  kind: article
+  title: "WTF Happened in 2025?"
+  url: https://wtfhappened2025.com/
+- date: 2026-02-24
+  kind: article
+  title: "The Mind's A Field"
+  url: https://www.marginalia.nu/log/05-minds-field/
+- date: 2026-02-24
+  kind: article
+  title: "Feynman's Garden"
+  url: https://www.marginalia.nu/log/a_108_feynman_revisited/
+- date: 2026-02-24
+  kind: article
+  title: "AI makes you boring"
+  url: https://www.marginalia.nu/log/a_132_ai_bores/
+- date: 2026-02-21
+  kind: article
+  title: "Child’s Play: Tech’s new generation and the end of thinking"
+  url: https://harpers.org/archive/2026/03/childs-play-sam-kriss-ai-startup-roy-lee/
+- date: 2026-02-18
+  kind: article
+  title: "How to make something great"
+  url: https://ryolu.notion.site/how-to-make-something-great
+- date: 2026-02-17
+  kind: book
+  title: "Permutation City"
+  by: "Greg Egan"
+  url: https://en.wikipedia.org/wiki/Permutation_City
+  note: "finished"
+- date: 2026-02-17
+  kind: article
+  title: "I Improved 15 LLMs at Coding in One Afternoon. Only the Harness Changed."
+  url: https://blog.can.ac/2026/02/12/the-harness-problem/
+- date: 2026-02-17
+  kind: article
+  title: "Do Metaprojects"
+  url: https://taylor.town/wealth-001
+- date: 2026-02-15
+  kind: article
+  title: "Fragments: February 13"
+  url: https://martinfowler.com/fragments/2026-02-13.html
+- date: 2026-02-15
+  kind: article
+  title: "Breaking the Spell of Vibe Coding"
+  url: https://www.fast.ai/posts/2026-01-28-dark-flow/
+- date: 2026-02-06
+  kind: podcast
+  title: "State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI | Lex Fridman Podcast #490"
+  url: https://youtu.be/EV7WhVT270Q?si=Q7gEo-rhXu7kTsYR
+- date: 2026-02-05
+  kind: article
+  title: "how do I stop participating?"
+  url: https://geohot.github.io/blog/jekyll/update/2026/01/18/how-do-i-stop.html
+- date: 2026-02-05
+  kind: article
+  title: "you have three minutes to escape the perpetual underclass"
+  url: https://geohot.github.io/blog/jekyll/update/2026/01/17/three-minutes.html
+- date: 2026-02-05
+  kind: video
+  title: "George Hotz | Programming | how I actually use agentic coding | Agentic AI"
+  url: https://youtu.be/erBX3gTZqJI?si=A4Ggiv43Xkk9euLV
+- date: 2026-02-04
+  kind: article
+  title: "A Software Library with No Code"
+  url: https://www.dbreunig.com/2026/01/08/a-software-library-with-no-code.html
+- date: 2026-02-04
+  kind: post
+  title: "A few random notes from claude coding quite a bit last few weeks."
+  url: https://x.com/karpathy/status/2015883857489522876#m
+- date: 2026-01-31
+  kind: article
+  title: "Why Elixir/OTP doesn't need an Agent framework: Part 2"
+  url: https://goto-code.com/why-elixir-otp-doesnt-need-an-agent-framework-part-2/
+- date: 2026-01-31
+  kind: article
+  title: "Why Elixir/OTP doesn't need an Agent framework: Part 1"
+  url: https://goto-code.com/why-elixir-otp-doesnt-need-agent-framework-part-1/
+- date: 2026-01-29
+  kind: video
+  title: "The Soul of Erlang and Elixir • Sasa Juric • GOTO 2019"
+  url: https://www.youtube.com/watch?v=JvBT4XBdoUE
+  note: "Wow, Elixir is so based"
+- date: 2026-01-28
+  kind: article
+  title: "Beating the Averages"
+  url: https://paulgraham.com/avg.html
+- date: 2026-01-28
+  kind: article
+  title: "Type Safety Back and Forth"
+  url: https://www.parsonsmatt.org/2017/10/11/type_safety_back_and_forth.html
+  quote: "By restricting our past, we gain freedom in the future."
+- date: 2026-01-28
+  kind: article
+  title: "Rust at Scale: An Added Layer of Security for WhatsApp"
+  url: https://engineering.fb.com/2026/01/27/security/rust-at-scale-security-whatsapp/
+- date: 2026-01-26
+  kind: article
+  title: "Parse, don’t validate"
+  url: https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/
+- date: 2026-01-26
+  kind: article
+  title: "Running Claude Code dangerously (safely)"
+  url: https://blog.emilburzo.com/2026/01/running-claude-code-dangerously-safely/
+- date: 2026-01-24
+  kind: article
+  title: "Unrolling the Codex agent loop"
+  url: https://openai.com/index/unrolling-the-codex-agent-loop/
+- date: 2026-01-21
+  kind: article
+  title: "Protecting your time from predators in large tech companies"
+  url: https://www.seangoedecke.com/predators/
+- date: 2026-01-18
+  kind: article
+  title: "The Melancholy of Subculture Society"
+  url: https://gwern.net/subculture
+- date: 2026-01-18
+  kind: article
+  title: "Why We've Tried to Replace Developers Every Decade Since 1969"
+  url: https://www.caimito.net/en/blog/2025/12/07/the-recurring-dream-of-replacing-developers.html
+- date: 2026-01-14
+  kind: article
+  title: "Scaling long-running autonomous coding"
+  url: https://cursor.com/blog/scaling-agents
+- date: 2026-01-14
+  kind: article
+  title: "Why We Built Our Own Background Agent"
+  url: https://builders.ramp.com/post/why-we-built-our-background-agent
+- date: 2026-01-07
+  kind: article
+  title: "Emergent Behavior: When Skills Combine"
+  url: https://vibeandscribe.xyz/posts/2025-01-07-emergent-behavior.html
+- date: 2026-01-07
+  kind: article
+  title: "The rise of industrial software"
+  url: https://chrisloy.dev/post/2025/12/30/the-rise-of-industrial-software
+- date: 2026-01-01
+  kind: article
+  title: "My startup diary: Techstars"
+  url: https://austinhenley.com/blog/techstarsdiary.html
+- date: 2026-01-01
+  kind: podcast
+  title: "The Productivity Myth: Oliver Burkeman On Our Broken Relationship With Time, Embracing Our Limitations & Why More Isn’t Always Better"
+  url: https://www.richroll.com/podcast/oliver-burkeman-951/
+- date: 2026-01-01
+  kind: article
+  title: "The Dying Art of Being a Bum: On \"Useless Humans\" in the Age of AI"
+  url: https://open.substack.com/pub/shagbark/p/the-dying-art-of-being-a-bum

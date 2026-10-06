@@ -1,5 +1,7 @@
-# Digital Minimalism as a Software Engineer
-2023-10-18
+---
+title: "Digital Minimalism as a Software Engineer"
+date: 2023-10-18
+---
 
 It often seems contradictory to others that I am a digital minimalist, when I spend my entire workday in front of a screen as a Software Engineer. However, digital minimalism, to me, does not mean no screen time, although its other values do often contain this as a sub-goal of reducing it. Digital minimalism is about optimizing your relationship with technology and not falling victim to the Sirens of the seductive pleasures of the modern web.
 

@@ -1,0 +1,46 @@
+/*
+  Shipped fonts (SIL Open Font License; license files sit next to them in /fonts).
+  Design mode appends to this file when you Save a font from the font lab.
+*/
+
+/* Bagel Fat One: OFL-1.1 via Fontsource https://fontsource.org/fonts/bagel-fat-one */
+@font-face {
+  font-family: "Bagel Fat One";
+  src: url(/fonts/bagel-fat-one-400.woff2) format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* JetBrains Mono: OFL-1.1 via Fontsource https://fontsource.org/fonts/jetbrains-mono */
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url(/fonts/jetbrains-mono-300.woff2) format("woff2");
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url(/fonts/jetbrains-mono-400.woff2) format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url(/fonts/jetbrains-mono-700.woff2) format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* Instrument Sans: OFL-1.1 via Fontsource https://fontsource.org/fonts/instrument-sans */
+@font-face {
+  font-family: "Instrument Sans";
+  src: url(/fonts/instrument-sans-400.woff2) format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Instrument Sans";
+  src: url(/fonts/instrument-sans-700.woff2) format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}

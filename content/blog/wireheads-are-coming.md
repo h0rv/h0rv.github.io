@@ -1,5 +1,7 @@
-# Wireheads are Coming
-2023-06-06
+---
+title: "Wireheads are Coming"
+date: 2023-06-06
+---
 
 ![Wireheads are Coming](/static/wireheads-are-coming.jpg)
 

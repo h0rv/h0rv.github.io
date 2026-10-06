@@ -1,0 +1,48 @@
+/*
+  Design tokens. Every visual decision on the site lives here.
+  Edit by hand, or run `mise run dev`, press D, tweak, and hit Save:
+  design mode rewrites the values below in place and keeps this layout.
+*/
+:root {
+  /* color */
+  --bg: #f0fff0; /* honeydew */
+  --fg: #000000;
+  /* posts, mediashelf, resume; var(--bg)/var(--fg) means same as above */
+  --read-bg: var(--bg);
+  --read-fg: var(--fg);
+
+  /* logo */
+  --logo-font: "Bagel Fat One", Impact, sans-serif;
+  --logo-weight: 400;
+  --logo-ratio: 2.611;
+  --logo-scale: 1;
+  --logo-cap: 0.734; /* capital height in em, measured by design mode */
+  --logo-tracking: -0.02em;
+  --logo-max: 19vw; /* desktop: widest the logo column content may get */
+  --logo-align: center;
+
+  /* type */
+  --heading-font: "Bagel Fat One", Impact, sans-serif;
+  --heading-weight: 400;
+  --body-font: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono-font: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  --text-size: 100%; /* root size; 100% = the reader's browser default (usually 16px). Type below is in rem. */
+  --leading: 1.45;
+  --content-width: 78cqi; /* desktop: how far text and list contents reach beside the logo; the rest stays clear */
+  --measure: 76ch; /* longest line of body text */
+  --h1-size: 3.5rem;
+  --h2-size: 2rem;
+  --h3-size: 1.375rem;
+  --small-size: 0.875rem;
+
+  /* space */
+  --unit: 8px;
+  --gutter: 42px;
+  --row-pad: 11px;
+  --section-gap: 74px;
+  --rule: 2px; /* edge of the logo column */
+  --divider: 2px; /* lines between nav items, rows and sections; 0 = whitespace only */
+  --date-col: 11ch;
+  --thumb: 350px; /* min width of a roll cover on /photos */
+  --photo-gap: 128px; /* space between photos in a roll */
+}

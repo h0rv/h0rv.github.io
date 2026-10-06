@@ -1,0 +1,14 @@
+---
+import { getEntry, render } from "astro:content";
+import Base from "../../layouts/Base.astro";
+
+const resume = await getEntry("resume", "resume");
+const { Content } = await render(resume!);
+---
+
+<Base title="Resume" reading>
+  <div class="prose resume" data-dm="pad:--gutter width:--measure">
+    <a class="pdf mono" href="/resume/resume.pdf">PDF ↓</a>
+    <Content />
+  </div>
+</Base>

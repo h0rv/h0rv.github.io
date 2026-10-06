@@ -1,5 +1,7 @@
-# My First Tech Conference
-2023-10-18
+---
+title: "My First Tech Conference"
+date: 2023-10-18
+---
 
 The past two days I attended my not just my first technology conference, but my first open source conference: All Things Open 2023. I was able to get free tickets by volunteering for a Linux Foundation project my company is on the governing board for - I never used the technology, but it seemed cool and I got to learn a bit about it. Nonetheless, getting free tickets was cool because the tickets were a surpising $200 for the 2-day pass, but with the t-shirts and quality of "free" lunches this was reasonable in hindsight.
 

@@ -1,7 +1,5 @@
-# h0rv's Resume
+# Resume
 
-Forked from [resume.md](https://github.com/mikepqr/resume.md)
+Edit `resume.md`, then `uv run resume.py` to rebuild `resume.pdf`. The site renders `resume.md` at `/resume/`.
 
-```sh
-uv run resume.py
-```
+Forked from [resume.md](https://github.com/mikepqr/resume.md).

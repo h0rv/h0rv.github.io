@@ -1,0 +1,35 @@
+[tools]
+node = "latest"
+biome = "latest"
+
+[settings]
+lockfile = true
+
+[tasks.install]
+run = "npm ci"
+
+[tasks.dev]
+description = "Run locally; press D for design mode"
+run = "npx astro dev"
+
+[tasks.build]
+run = "npx astro build"
+
+[tasks.preview]
+run = "npx astro preview"
+
+[tasks.fmt]
+description = "Format and apply safe lint fixes"
+run = "biome check --write ."
+
+[tasks.lint]
+description = "Check formatting and lint (what CI runs)"
+run = "biome ci ."
+
+[tasks.fonts]
+description = "Download the font lab for design mode (dev only)"
+run = "node src/dev/fetch-fonts.mjs"
+
+[tasks.photos]
+description = "Shrink new photos and strip metadata (GPS) before committing"
+run = "node src/dev/photos.mjs"

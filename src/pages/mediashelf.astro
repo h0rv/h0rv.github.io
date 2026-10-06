@@ -1,0 +1,55 @@
+---
+import Base from "../layouts/Base.astro";
+import { getList } from "../lib/content";
+
+// Newest first; same-day entries keep their file order.
+const entries = (await getList("mediashelf")).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const MONTHS = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+// year -> month -> entries, newest first
+const years = [...Map.groupBy(entries, (e) => e.data.date.getUTCFullYear())].map(
+  ([year, list]) => [year, [...Map.groupBy(list, (e) => e.data.date.getUTCMonth())]] as const,
+);
+---
+
+<Base title="Mediashelf" reading>
+  <div class="prose" data-dm="pad:--gutter width:--measure">
+    <p>What I am reading, listening to, and watching.</p>
+  </div>
+  {years.map(([year, months]) => (
+    <section class="group">
+      <h2 class="group-head">{year}</h2>
+      {months.map(([month, list]) => (
+        <>
+          <h3 class="group-head" style="--level: 1">{MONTHS[month]}</h3>
+          <ul class="rows" style="--level: 2; --date-col: 3ch">
+            {list.map(({ data: e }) => (
+              <li class="link-row">
+                <time class="meta" datetime={e.date.toISOString().slice(0, 10)}>{e.date.getUTCDate()}</time>
+                <span>
+                  <a class="main" href={e.url}>{e.title}</a>
+                  {e.by && <span class="by"> by {e.by}</span>}
+                  {e.note && <span class="aside">{e.note}</span>}
+                  {e.quote && <q class="aside">{e.quote}</q>}
+                </span>
+                <span class="links mono">{e.kind}</span>
+              </li>
+            ))}
+          </ul>
+        </>
+      ))}
+    </section>
+  ))}
+</Base>

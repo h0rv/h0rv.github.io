@@ -1,0 +1,25 @@
+---
+import { render } from "astro:content";
+import Base from "../layouts/Base.astro";
+import { getPosts, inlineTitle, isoDate, plainTitle } from "../lib/content";
+
+export async function getStaticPaths() {
+  const posts = await getPosts();
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<Base title={plainTitle(post.data.title)} reading>
+  <article>
+    <header class="post-head" data-dm="pad:--gutter">
+      <h1 set:html={inlineTitle(post.data.title)} />
+      <time class="mono" datetime={isoDate(post.data.date)}>{isoDate(post.data.date)}</time>
+    </header>
+    <div class="prose" data-dm="pad:--gutter width:--measure">
+      <Content />
+    </div>
+  </article>
+</Base>

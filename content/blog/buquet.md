@@ -1,5 +1,7 @@
-# `buquet`: Bucket Queue and Workflow Orchestrator
-2026-02-02
+---
+title: "`buquet`: Bucket Queue and Workflow Orchestrator"
+date: 2026-02-02
+---
 
 `buquet` is a Rust and Python library for building durable queues and workflows with the only infrastructure dependency of S3-compatible object storage.
 

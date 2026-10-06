@@ -1,0 +1,47 @@
+---
+import { getEntry, render } from "astro:content";
+import PostRows from "../components/PostRows.astro";
+import ProjectRows from "../components/ProjectRows.astro";
+import Base from "../layouts/Base.astro";
+import { getList, getPosts } from "../lib/content";
+import { getRolls, rollMeta } from "../lib/photos";
+
+const home = await getEntry("pages", "home");
+const { Content } = await render(home!);
+const posts = (await getPosts()).slice(0, 5);
+const links = await getList("links");
+const rolls = (await getRolls()).slice(0, 5);
+---
+
+<Base>
+  <section class="section intro">
+    <div class="prose" data-dm="pad:--gutter width:--measure">
+      <Content />
+      <p class="quick mono">{links.map((l) => <a href={l.data.url}>{l.data.label}</a>)}</p>
+    </div>
+  </section>
+
+  <section class="section" data-dm="gap:--section-gap">
+    <h2 class="section-head"><span>Writing</span><a href="/writing">All →</a></h2>
+    <PostRows posts={posts} />
+  </section>
+
+  <section class="section">
+    <h2 class="section-head"><span>Projects</span><a href="/projects">All →</a></h2>
+    <ProjectRows />
+  </section>
+
+  {rolls.length > 0 && (
+    <section class="section">
+      <h2 class="section-head"><span>Photos</span><a href="/photos">All →</a></h2>
+      <ul class="rows">
+        {rolls.map((r) => (
+          <li class="link-row">
+            <span class="meta">{rollMeta(r)[0]}</span>
+            <a class="main" href={`/photos/${r.id}`}>{r.data.title}</a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+</Base>

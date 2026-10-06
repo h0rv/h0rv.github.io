@@ -1,5 +1,7 @@
-# `philly` CLI and Python Library
-2026-02-01
+---
+title: "`philly` CLI and Python Library"
+date: 2026-02-01
+---
 
 The `philly` CLI and Python library is a toolkit for exploring and working with [OpenDataPhilly](https://opendataphilly.org/) datasets and data.
 

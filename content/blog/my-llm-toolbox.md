@@ -1,5 +1,7 @@
-# My LLM Toolbox
-2024-04-06
+---
+title: "My LLM Toolbox"
+date: 2024-04-06
+---
 
 This a dump of tools, libraries, and other LLM-related things I have collected.
 

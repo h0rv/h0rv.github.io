@@ -1,5 +1,7 @@
-# Some Quotes from *Meditations* by Marcus Aurelius
-2023-11-08
+---
+title: "Some Quotes from *Meditations* by Marcus Aurelius"
+date: 2023-11-08
+---
 
 Sigma male memes aside, this book is quite profound in leading a fulfilled life and understanding our place in the Universe - something I struggle with on a daily basis. Also, it is simply incredible on the sheer amount of insights Marcus Aurelius held, let alone so long ago. Understandably, high-class individuals like him had nothing but time to contemplate our existence, but that has truly been lost in our modern age of distraction.
 

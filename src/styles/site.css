@@ -1,0 +1,508 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--text-size);
+  background: var(--bg);
+  color: var(--fg);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--body-font);
+  font-size: 1rem;
+  line-height: var(--leading);
+  font-synthesis: none;
+}
+
+::selection {
+  background: var(--fg);
+  color: var(--bg);
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: var(--rule);
+  text-underline-offset: 0.15em;
+}
+a:hover {
+  background: var(--fg);
+  color: var(--bg);
+  text-decoration: none;
+}
+:focus-visible {
+  outline: var(--rule) solid var(--fg);
+  outline-offset: 2px;
+}
+
+.mono {
+  font-family: var(--mono-font);
+  font-size: var(--small-size);
+  letter-spacing: 0.02em;
+}
+
+/* ---------- frame: logo column + content column ---------- */
+
+.main-col {
+  container: main / inline-size;
+  --pad-end: var(--gutter);
+  --indent: clamp(12px, 3cqi, var(--gutter)); /* one level of nesting */
+  --text-max: 100%;
+}
+.site {
+  min-height: 100dvh;
+}
+
+.logo-col {
+  --logo-size: calc((100vw - 2 * var(--gutter)) / var(--logo-ratio) * var(--logo-scale));
+  padding: var(--gutter);
+  border-bottom: var(--rule) solid var(--fg);
+}
+
+.logo {
+  display: block;
+  inline-size: max-content; /* logical: follows the text direction, so the vertical logo stays inside its column */
+  font-family: var(--logo-font);
+  font-size: var(--logo-size);
+  font-weight: var(--logo-weight);
+  line-height: 1;
+  letter-spacing: var(--logo-tracking);
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  /* trim the line box to the capitals so the logo sits flush in its column */
+  text-box: trim-both cap alphabetic;
+}
+/* Blocks that are links handle their own hover. */
+:is(.logo, .link-row a, .rolls a, .photos a):hover {
+  background: none;
+  color: inherit;
+}
+
+@media (min-width: 900px) {
+  .site {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .logo-col {
+    --logo-size: min(
+      calc((100dvh - 2 * var(--gutter)) / var(--logo-ratio) * var(--logo-scale)),
+      calc(var(--logo-max) / var(--logo-cap))
+    );
+    position: sticky;
+    top: 0;
+    flex: none;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: var(--logo-align);
+    border-bottom: 0;
+    border-right: var(--rule) solid var(--fg);
+    /* the rotated logo's line box reaches past the column; keep its link (and clicks) inside */
+    overflow: clip;
+  }
+
+  .logo {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+  }
+
+  /* Lines run the full width; their contents stop at --content-width, leaving the right side clear. */
+  .main-col {
+    flex: 1;
+    min-width: 0;
+    --pad-end: max(var(--gutter), calc(100cqi - var(--content-width) + var(--gutter)));
+    --text-max: var(--content-width);
+  }
+}
+
+/* Reading pages (posts, mediashelf, resume) can use their own colors; the logo column keeps --bg/--fg. */
+.reading .main-col {
+  --bg: var(--read-bg);
+  --fg: var(--read-fg);
+  background: var(--bg);
+  color: var(--fg);
+}
+
+/* ---------- nav ---------- */
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: var(--divider) solid var(--fg);
+  font-family: var(--mono-font);
+  font-size: var(--small-size);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.nav a {
+  /* padding shrinks with the content column so the boxed bar stays on one line */
+  padding: var(--row-pad) clamp(10px, 3cqi, var(--gutter));
+  border-right: var(--divider) solid var(--fg);
+  text-decoration: none;
+}
+.nav a[aria-current="page"] {
+  background: var(--fg);
+  color: var(--bg);
+}
+
+/* When the content column is too narrow for the boxed bar: a plain row of words. */
+@container main (max-width: 680px) {
+  .nav {
+    gap: calc(var(--row-pad) / 2) var(--gutter);
+    padding: var(--row-pad) var(--gutter);
+  }
+  .nav a {
+    padding: 0.15em 0.4em;
+    margin: 0 -0.4em;
+    border-right: 0;
+  }
+}
+
+/* ---------- sections and rows ---------- */
+
+.section {
+  margin-top: var(--section-gap);
+}
+.section:first-child {
+  margin-top: 0;
+}
+.intro .prose {
+  padding-bottom: 0;
+}
+.quick {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 var(--gutter);
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--gutter);
+  margin: 0;
+  padding: var(--row-pad) var(--gutter);
+  padding-inline-end: var(--pad-end);
+  border-bottom: var(--divider) solid var(--fg);
+  font-family: var(--mono-font);
+  font-size: var(--small-size);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.section-head a {
+  text-decoration: none;
+}
+
+.rows {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.rows li {
+  border-bottom: var(--divider) solid var(--fg);
+}
+.meta,
+.aside {
+  font-family: var(--mono-font);
+  font-size: var(--small-size);
+}
+.aside,
+.desc {
+  display: block;
+}
+.by,
+.desc {
+  opacity: 0.75;
+}
+
+/* A row is one link (.main) stretched over the whole row; extra links (source) sit above it. */
+.rows .link-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: var(--date-col) 1fr auto;
+  gap: var(--gutter);
+  align-items: baseline;
+  padding: var(--row-pad) var(--pad-end) var(--row-pad) calc(var(--gutter) + var(--level, 0) * var(--indent));
+}
+.link-row a {
+  text-decoration: none;
+}
+.link-row .main::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+.link-row .links a {
+  position: relative;
+  z-index: 1;
+}
+.link-row:hover,
+.link-row:has(a:focus-visible) {
+  background: var(--fg);
+  color: var(--bg);
+}
+.link-row .links a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: var(--rule);
+}
+.link-row a:focus-visible {
+  outline: none;
+}
+.link-row .links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0 var(--gutter);
+}
+@media (max-width: 600px) {
+  .rows .link-row {
+    grid-template-columns: var(--date-col) 1fr;
+    row-gap: 0;
+  }
+  .link-row .links {
+    grid-column: 2;
+    justify-content: flex-start;
+  }
+}
+
+/* Grouped lists (writing, mediashelf): year > month > rows, shown by indentation only.
+   --level on a heading or list indents it by that many steps of --indent. */
+.group + .group {
+  margin-top: var(--section-gap);
+}
+.group-head {
+  margin: 0;
+  padding: var(--row-pad) var(--pad-end) var(--row-pad) calc(var(--gutter) + var(--level, 0) * var(--indent));
+  border-bottom: var(--divider) solid var(--fg);
+  font-family: var(--heading-font);
+  font-weight: var(--heading-weight);
+  font-size: var(--h2-size);
+  line-height: 1.1;
+}
+h3.group-head {
+  font-size: var(--h3-size);
+}
+
+/* ---------- prose ---------- */
+
+.prose {
+  padding: var(--gutter);
+  max-width: min(var(--text-max), calc(var(--measure) + 2 * var(--gutter)));
+}
+.prose > :first-child {
+  margin-top: 0;
+}
+.prose p,
+.prose ul,
+.prose ol,
+.prose blockquote,
+.prose pre,
+.prose table {
+  margin: 0 0 1em;
+}
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  font-family: var(--heading-font);
+  font-weight: var(--heading-weight);
+  line-height: 1.1;
+  margin: 1.6em 0 0.5em;
+}
+.prose h1 {
+  font-size: min(var(--h1-size), 12vw);
+}
+.prose h2 {
+  font-size: var(--h2-size);
+}
+.prose h3 {
+  font-size: var(--h3-size);
+}
+.prose ul,
+.prose ol {
+  padding-left: 1.25em;
+}
+.prose li + li {
+  margin-top: 0.2em;
+}
+.prose img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: var(--rule) solid var(--fg);
+}
+.prose blockquote {
+  margin-left: 0;
+  padding-left: var(--gutter);
+  border-left: var(--rule) solid var(--fg);
+}
+.prose hr {
+  border: 0;
+  border-top: var(--rule) solid var(--fg);
+  margin: 2em 0;
+}
+.prose code {
+  font-family: var(--mono-font);
+  font-size: 0.85em;
+}
+.prose pre {
+  overflow-x: auto;
+  padding: var(--gutter);
+  background: var(--fg);
+  color: var(--bg);
+  line-height: 1.4;
+}
+.prose pre code {
+  font-size: var(--small-size);
+}
+.prose table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.prose th,
+.prose td {
+  border: var(--rule) solid var(--fg);
+  padding: 0.3em 0.5em;
+  text-align: left;
+}
+
+/* ---------- post header ---------- */
+
+.post-head {
+  padding: var(--gutter);
+  padding-inline-end: var(--pad-end);
+  border-bottom: var(--divider) solid var(--fg);
+}
+.post-head h1 {
+  margin: 0;
+  font-family: var(--heading-font);
+  font-weight: var(--heading-weight);
+  max-width: 18ch;
+  font-size: min(var(--h1-size), 12vw);
+  overflow-wrap: break-word;
+  line-height: 0.95;
+}
+/* code in titles takes the title's font, so names like `buquet` don't clash */
+.post-head code,
+.rows code,
+.prose :is(h1, h2, h3, h4) code {
+  font-family: inherit;
+  font-size: inherit;
+}
+.post-head time {
+  display: block;
+  margin-top: var(--gutter);
+}
+
+/* ---------- resume ---------- */
+
+.resume .pdf {
+  float: right;
+  margin: 0 0 0 var(--gutter);
+  line-height: 2.2;
+}
+.resume .pdf + h1 {
+  margin-top: 0;
+}
+.resume h3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0 var(--gutter);
+}
+.resume h3 span:last-child {
+  font-family: var(--mono-font);
+  font-size: var(--small-size);
+  font-weight: 400;
+}
+.resume h1 + ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 var(--gutter);
+}
+.resume h1 + ul > li {
+  margin: 0;
+}
+
+/* ---------- photos ---------- */
+
+.rolls {
+  list-style: none;
+  margin: 0;
+  padding: var(--gutter);
+  padding-inline-end: var(--pad-end);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(var(--thumb), 100%), 1fr));
+  gap: var(--section-gap) var(--gutter);
+}
+.rolls a {
+  display: grid;
+  gap: calc(var(--row-pad) / 2);
+  text-decoration: none;
+}
+.rolls a:hover .roll-title {
+  text-decoration: underline;
+  text-decoration-thickness: var(--rule);
+}
+.rolls img,
+.rolls .empty {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+.rolls .empty {
+  display: grid;
+  place-items: center;
+  border: var(--rule) dashed var(--fg);
+}
+.roll-title {
+  font-family: var(--heading-font);
+  font-weight: var(--heading-weight);
+  font-size: var(--h2-size);
+  line-height: 1;
+}
+.roll-meta {
+  margin: var(--row-pad) 0 0;
+}
+
+.photos {
+  display: grid;
+  gap: var(--photo-gap);
+  padding: var(--gutter);
+  padding-inline-end: var(--pad-end);
+}
+.photos figure {
+  margin: 0;
+}
+.photos img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: calc(100dvh - 2 * var(--gutter));
+  object-fit: contain;
+  object-position: left;
+}
+.photos figcaption {
+  margin-top: calc(var(--row-pad) / 2);
+}
+
+/* analytics pixel */
+.pixel {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}

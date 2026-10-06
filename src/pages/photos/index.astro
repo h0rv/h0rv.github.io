@@ -1,0 +1,34 @@
+---
+import { Image } from "astro:assets";
+import Base from "../../layouts/Base.astro";
+import { coverFor, getRolls, photosFor, rollMeta } from "../../lib/photos";
+
+const rolls = await getRolls();
+---
+
+<Base title="Photos">
+  <section class="section">
+    <ul class="rolls" data-dm="pad:--gutter">
+      {rolls.map((roll) => {
+        const cover = coverFor(roll);
+        const count = photosFor(roll).length;
+        return (
+          <li>
+            <a href={`/photos/${roll.id}`}>
+              {cover ? (
+                <Image src={cover.src} alt="" widths={[480, 960]} sizes="(min-width: 900px) 30vw, 100vw" />
+              ) : (
+                <span class="empty mono">no photos yet</span>
+              )}
+              <span class="roll-title">
+                {roll.data.title}
+                {roll.data.draft && <span class="mono"> (draft)</span>}
+              </span>
+              <span class="mono">{[...rollMeta(roll), `${count}`].join(" · ")}</span>
+            </a>
+          </li>
+        );
+      })}
+    </ul>
+  </section>
+</Base>

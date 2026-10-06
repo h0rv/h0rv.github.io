@@ -1,0 +1,72 @@
+---
+import fontsCss from "../styles/fonts.css?raw";
+import tokensCss from "../styles/tokens.css?raw";
+import "../styles/tokens.css";
+import "../styles/fonts.css";
+import "../styles/site.css";
+import { getRolls } from "../lib/photos";
+import { NAV, SITE } from "../site";
+
+interface Props {
+  title?: string;
+  description?: string;
+  /** long-form page: uses the reading colors */
+  reading?: boolean;
+}
+
+const { title, description = SITE.title, reading = false } = Astro.props;
+const pageTitle = title ? `${title} · ${SITE.logo}` : SITE.logo;
+const here = Astro.url.pathname.replace(/\.html$/, "").replace(/(.)\/$/, "$1");
+const isCurrent = (href: string) => here === href.replace(/(.)\/$/, "$1");
+// Hide Photos until a roll is published.
+const hasPhotos = (await getRolls()).length > 0;
+const nav = NAV.filter((n) => n.href !== "/photos" || hasPhotos);
+// Preload the logo font (whatever tokens.css picks) so the wordmark doesn't flash.
+const logoFamily = tokensCss.match(/--logo-font:\s*["']?([^"',;]+)/)?.[1];
+const logoFile = [...fontsCss.matchAll(/@font-face\s*{([^}]*)}/g)]
+  .map((m) => m[1])
+  .find((rule) => rule.includes(`"${logoFamily}"`))
+  ?.match(/url\(([^)]+)\)/)?.[1];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{pageTitle}</title>
+    <meta name="description" content={description}>
+    <link rel="canonical" href={new URL(Astro.url.pathname, SITE.url)}>
+    <link rel="alternate" type="application/rss+xml" title={SITE.title} href="/rss.xml">
+    {logoFile && <link rel="preload" href={logoFile} as="font" type="font/woff2" crossorigin />}
+  </head>
+  <body class:list={{ reading }}>
+    <div class="site">
+      <header class="logo-col" data-dm="logo pad:--gutter">
+        <a class="logo" href="/" aria-label={`${SITE.title}, home`}>{SITE.logo}</a>
+      </header>
+      <div class="main-col">
+        <nav class="nav" aria-label="Main" data-dm="rowpad:--row-pad">
+          {nav.map((n) => (
+            <a href={n.href} aria-current={isCurrent(n.href) ? "page" : undefined}>
+              {n.label}
+            </a>
+          ))}
+        </nav>
+        <main>
+          <slot />
+        </main>
+      </div>
+    </div>
+    {/* Page views without JavaScript: GoatCounter's image pixel. */}
+    {import.meta.env.PROD && (
+      <img
+        class="pixel"
+        src={`${SITE.goatcounter}/count?p=${encodeURIComponent(Astro.url.pathname)}`}
+        alt=""
+        width="1"
+        height="1"
+      />
+    )}
+  </body>
+</html>

@@ -3,7 +3,6 @@
 
 <!-- The unordered list immediately after the h1 will be formatted on a single
 line. It is intended to be used for contact details -->
-  - <rhorv@proton.me>
   - [horv.co](https://horv.co)
   - Philadelphia, PA
 

@@ -1,3 +1,13 @@
+/* Crossfade between pages instead of a hard repaint (no JS; ignored where unsupported). */
+@view-transition {
+  navigation: auto;
+}
+@media (prefers-reduced-motion: reduce) {
+  @view-transition {
+    navigation: none;
+  }
+}
+
 *,
 *::before,
 *::after {

@@ -21,12 +21,17 @@ const isCurrent = (href: string) => here === href.replace(/(.)\/$/, "$1");
 // Hide Photos until a roll is published.
 const hasPhotos = (await getRolls()).length > 0;
 const nav = NAV.filter((n) => n.href !== "/photos" || hasPhotos);
-// Preload the logo font (whatever tokens.css picks) so the wordmark doesn't flash.
-const logoFamily = tokensCss.match(/--logo-font:\s*["']?([^"',;]+)/)?.[1];
-const logoFile = [...fontsCss.matchAll(/@font-face\s*{([^}]*)}/g)]
-  .map((m) => m[1])
-  .find((rule) => rule.includes(`"${logoFamily}"`))
-  ?.match(/url\(([^)]+)\)/)?.[1];
+// Preload the regular weight of each font in use (logo, headings, body, mono) so pages
+// paint in the right fonts instead of flashing a fallback.
+const rules = [...fontsCss.matchAll(/@font-face\s*{([^}]*)}/g)].map((m) => m[1]);
+const preloads = [
+  ...new Set(
+    [...tokensCss.matchAll(/--[a-z-]*font:\s*["']?([^"',;]+)/g)]
+      .map(([, family]) => rules.filter((r) => r.includes(`"${family}"`)))
+      .map((faces) => (faces.find((r) => /font-weight:\s*400/.test(r)) ?? faces[0])?.match(/url\(([^)]+)\)/)?.[1])
+      .filter(Boolean),
+  ),
+];
 ---
 
 <!doctype html>
@@ -38,7 +43,7 @@ const logoFile = [...fontsCss.matchAll(/@font-face\s*{([^}]*)}/g)]
     <meta name="description" content={description}>
     <link rel="canonical" href={new URL(Astro.url.pathname, SITE.url)}>
     <link rel="alternate" type="application/rss+xml" title={SITE.title} href="/rss.xml">
-    {logoFile && <link rel="preload" href={logoFile} as="font" type="font/woff2" crossorigin />}
+    {preloads.map((href) => <link rel="preload" href={href} as="font" type="font/woff2" crossorigin />)}
   </head>
   <body class:list={{ reading }}>
     <div class="site">

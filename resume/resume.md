@@ -14,9 +14,13 @@ is intended to be used for a short summary. -->
 <!-- You have to wrap the "left" and "right" half of these headings in spans by
 hand -->
 
-### <span>Senior Platform Engineer - Anatomy Financial</span> <span>June 2026 -- Current</span>
+### <span>Senior Software Engineer, AI & Platform - Anatomy Financial</span> <span>June 2026 -- Current</span>
 
   San Francisco, CA (Remote)
+
+  - Rebuilt our document extraction agent while volume grew 40%, making it 17x faster, 70% cheaper per document, and eliminating extraction failures.
+  - Rebuilt claim-to-payment matching engine, raising the match rate 2.5x.
+  - Improved developer experience with a local dev setup for the whole platform, stricter linting and type checking, and faster CI.
 
 ### <span>Software Engineer - Sweetspot</span> <span>July 2025 -- April 2026</span>
 

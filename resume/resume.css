@@ -117,7 +117,7 @@ h1+ul+p {
     /* Change margins and paper size of PDF */
     /* https://developer.mozilla.org/en-US/docs/Web/CSS/@page */
     size: letter;
-    margin: 0.5in 0.5in;
+    margin: 0.35in 0.45in;
 }
 
 @media screen and (max-width: 800px) {

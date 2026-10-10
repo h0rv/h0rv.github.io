@@ -19,6 +19,7 @@
 
 - name: isophilly
   year: 2026
+  site: https://isophilly.horv.co/
   repo: https://github.com/h0rv/isophilly
   description:
 

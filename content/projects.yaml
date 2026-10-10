@@ -23,6 +23,12 @@
   repo: https://github.com/h0rv/isophilly
   description:
 
+- name: oldphilly
+  year: 2026
+  site: https://oldphilly.org
+  repo: https://github.com/h0rv/oldphilly
+  description:
+
 - name: opennoise
   year: 2026
   site: https://opennoise.horv.co

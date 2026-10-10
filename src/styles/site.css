@@ -186,7 +186,6 @@ a:hover {
 }
 .intro .prose {
   padding-bottom: 0;
-  max-width: none;
 }
 .quick {
   display: flex;

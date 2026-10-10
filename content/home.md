@@ -4,7 +4,4 @@ description: h0rv
 tags: blog, personal, digital minimalism, software engineer, tech, life
 ---
 
-Hi, I'm Robby and welcome to my home on the web!
-
-I'm a software engineer and digital minimalist who is passionate about open source, cloud/infrastructure, and AI.
-
+Hi, I'm Robby, a [grug-brained](https://grugbrain.dev/) software engineer and digital minimalist in Philly. I'm passionate about open source, dev tooling, infrastructure, and AI.

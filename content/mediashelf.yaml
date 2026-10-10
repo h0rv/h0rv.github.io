@@ -2,6 +2,12 @@
 # kind: book | film | article | video | podcast | paper | post
 # Fields: date, kind, title, url; optional: by, note, quote
 
+https://htmx.org/essays/yes-and/
+- date: 2026-10-09
+  kind: article
+  title: "Yes, and..."
+  by: "Carson Gross"
+  url: https://htmx.org/essays/yes-and/
 - date: 2026-08-28
   kind: book
   title: "Kitchen Confidential"

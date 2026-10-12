@@ -8,6 +8,8 @@ export async function getPosts() {
 // Entries from a YAML list, in file order.
 export async function getList<C extends "projects" | "links" | "mediashelf">(name: C) {
   const entries = await getCollection(name);
+  // Astro only logs a broken YAML file; fail the build instead of shipping an empty page.
+  if (entries.length === 0) throw new Error(`content/${name}.yaml is empty or invalid`);
   return entries.sort((a, b) => Number(a.id) - Number(b.id));
 }
 

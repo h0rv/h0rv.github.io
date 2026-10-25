@@ -67,6 +67,11 @@
   repo: https://github.com/h0rv/philly
   description:
 
+- name: d2-python
+  year: 2024
+  repo: https://github.com/h0rv/d2-python
+  description: Build D2 diagrams with Python.
+
 - name: instructor-go
   year: 2024
   site: https://go.useinstructor.com/

@@ -2,6 +2,25 @@
 # kind: book | film | article | video | podcast | paper | post
 # Fields: date, kind, title, url; optional: by, note, quote
 
+- date: 2026-10-31
+  kind: podcast
+  title: "Why Sam Altman is against a single superintelligence"
+  url: https://cheekypint.substack.com/p/why-sam-altman-is-against-a-single
+- date: 2026-10-25
+  kind: article
+  title: "The Coastal Elites Are Right, Actually"
+  by: "A.M. Hickman"
+  url: https://shagbark.substack.com/p/the-coastal-elites-are-right-actually
+- date: 2026-10-25
+  kind: article
+  title: "Everything is private equity <3"
+  by: "Hanna Horvath"
+  url: https://yourbrainonmoney.substack.com/p/everything-is-private-equity-3
+- date: 2026-10-25
+  kind: article
+  title: "Burning Man Staves Off Nihilism, If Only Temporarily"
+  by: "Robert Mariani"
+  url: https://www.theamericanconservative.com/burning-man-staves-off-nihilism-if-only-temporarily/
 - date: 2026-10-09
   kind: article
   title: "Yes, and..."

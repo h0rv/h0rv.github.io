@@ -8,8 +8,8 @@ const categories = Map.groupBy(await getList("projects"), (project) => project.d
 
 <Base title="Projects">
   {[...categories].map(([category, projects]) => (
-    <section class="group">
-      <h2 class="group-head">{category}</h2>
+    <section>
+      <h2 class="section-head">{category}</h2>
       <ProjectRows projects={projects} />
     </section>
   ))}

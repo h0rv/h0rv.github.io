@@ -1,53 +1,114 @@
 # Projects in display order, grouped by category on the projects page.
 # `site` is a live app, `docs` is documentation, and `repo` is the source.
-# Years refer to when the projects started.
+# Years refer to when the projects started. Descriptions appear on hover.
+
+- name: bourdain-archive
+  year: 2026
+  category: Sites and fun projects
+  site: https://horv.co/bourdain-archive/
+  repo: https://github.com/h0rv/bourdain-archive
+  description: An archive of Anthony Bourdain's writing, television, films, and appearances.
+
+- name: isophilly
+  year: 2026
+  category: Sites and fun projects
+  site: https://isophilly.horv.co/
+  repo: https://github.com/h0rv/isophilly
+  description: A pixel-art map of Philadelphia.
+
+- name: oldphilly
+  year: 2026
+  category: Sites and fun projects
+  site: https://oldphilly.org
+  repo: https://github.com/h0rv/oldphilly
+  description: Historical photographs from the Philadelphia City Archives, mapped by location.
+
+- name: opennoise
+  year: 2026
+  category: Sites and fun projects
+  site: https://opennoise.horv.co
+  repo: https://github.com/h0rv/opennoise
+  description: Explore music genres and artists using open data.
+
+- name: sprts
+  year: 2026
+  category: Sites and fun projects
+  site: https://sprts.horv.co
+  repo: https://github.com/h0rv/sprts
+  description: Sports scores and schedules in a plain-text interface.
+
+- name: grugdb
+  year: 2026
+  category: Sites and fun projects
+  site: https://grugdb.horv.co/
+  repo: https://github.com/h0rv/grugdb
+  description: Build a relational database in typed Python, with exercises in your browser.
+
+- name: tinygpt
+  year: 2026
+  category: Sites and fun projects
+  repo: https://github.com/h0rv/tinygpt
+  description: nanoGPT implemented with tinygrad.
+
+- name: zeptograd
+  year: 2026
+  category: Sites and fun projects
+  repo: https://github.com/h0rv/zeptograd
+  description: A small automatic differentiation and neural network library in Zig.
+
+- name: instructor-go
+  year: 2024
+  category: Libraries and tools
+  docs: https://go.useinstructor.com/
+  repo: https://github.com/jxnl/instructor-go
+  description: Get structured LLM output as Go types.
 
 - name: instructor.zig
   year: 2026
-  category: Zig libraries
+  category: Libraries and tools
   docs: https://horv.co/instructor.zig/
   repo: https://github.com/h0rv/instructor.zig
   description: Get structured LLM output as Zig types, with validation and retries.
 
 - name: openai.zig
   year: 2026
-  category: Zig libraries
+  category: Libraries and tools
   repo: https://github.com/h0rv/openai.zig
   description: An OpenAI API client for Zig.
 
 - name: anthropic.zig
   year: 2026
-  category: Zig libraries
+  category: Libraries and tools
   repo: https://github.com/h0rv/anthropic.zig
   description: An Anthropic API client for Zig.
 
 - name: openresponses.zig
   year: 2026
-  category: Zig libraries
+  category: Libraries and tools
   repo: https://github.com/h0rv/openresponses.zig
   description: An OpenResponses API client for Zig.
 
 - name: jsonschema.zig
   year: 2026
-  category: Zig libraries
+  category: Libraries and tools
   repo: https://github.com/h0rv/jsonschema.zig
   description: Generate JSON Schema from Zig types and validate JSON values.
 
 - name: zchema
   year: 2026
-  category: Zig libraries
+  category: Libraries and tools
   repo: https://github.com/h0rv/zchema
   description: Typed, validated JSON APIs and OpenAPI 3.1 for Zig HTTP servers.
 
 - name: skills.zig
   year: 2026
-  category: Zig libraries
+  category: Libraries and tools
   repo: https://github.com/h0rv/skills.zig
   description: Discover Agent Skills and load their instructions on demand.
 
 - name: mcp.zig
   year: 2026
-  category: Zig libraries
+  category: Libraries and tools
   repo: https://github.com/h0rv/mcp.zig
   description: MCP clients and servers for Zig. Maintained fork of zig-sdk.
 
@@ -94,64 +155,3 @@
   category: Libraries and tools
   repo: https://github.com/h0rv/d2-python
   description: Build D2 diagrams with Python.
-
-- name: instructor-go
-  year: 2024
-  category: Libraries and tools
-  docs: https://go.useinstructor.com/
-  repo: https://github.com/jxnl/instructor-go
-  description: Get structured LLM output as Go types.
-
-- name: bourdain-archive
-  year: 2026
-  category: Sites and apps
-  site: https://horv.co/bourdain-archive/
-  repo: https://github.com/h0rv/bourdain-archive
-  description: An archive of Anthony Bourdain's writing, television, films, and appearances.
-
-- name: isophilly
-  year: 2026
-  category: Sites and apps
-  site: https://isophilly.horv.co/
-  repo: https://github.com/h0rv/isophilly
-  description: A pixel-art map of Philadelphia.
-
-- name: oldphilly
-  year: 2026
-  category: Sites and apps
-  site: https://oldphilly.org
-  repo: https://github.com/h0rv/oldphilly
-  description: Historical photographs from the Philadelphia City Archives, mapped by location.
-
-- name: opennoise
-  year: 2026
-  category: Sites and apps
-  site: https://opennoise.horv.co
-  repo: https://github.com/h0rv/opennoise
-  description: Explore music genres and artists using open data.
-
-- name: sprts
-  year: 2026
-  category: Sites and apps
-  site: https://sprts.horv.co
-  repo: https://github.com/h0rv/sprts
-  description: Sports scores and schedules in a plain-text interface.
-
-- name: grugdb
-  year: 2026
-  category: Learning and experiments
-  site: https://grugdb.horv.co/
-  repo: https://github.com/h0rv/grugdb
-  description: Build a relational database in typed Python, with exercises in your browser.
-
-- name: tinygpt
-  year: 2026
-  category: Learning and experiments
-  repo: https://github.com/h0rv/tinygpt
-  description: nanoGPT implemented with tinygrad.
-
-- name: zeptograd
-  year: 2026
-  category: Learning and experiments
-  repo: https://github.com/h0rv/zeptograd
-  description: A small automatic differentiation and neural network library in Zig.

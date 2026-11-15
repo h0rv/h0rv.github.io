@@ -5,7 +5,7 @@
 */
 :root {
   /* color */
-  --bg: #c6f2bd;
+  --bg: #6c9cff;
   --fg: #000000;
   /* posts, mediashelf, resume; var(--bg)/var(--fg) means same as above */
   --read-bg: var(--bg);

@@ -3,12 +3,7 @@ title: "I Think I Finally Get Lisp"
 date: 2026-11-15
 ---
 
-<figure>
-  <a href="https://xkcd.com/224/">
-    <img src="/static/xkcd-lisp.jpg" width="740" height="220" alt="xkcd's Lisp comic about enlightenment and a universe hacked together with Perl" title="We lost the documentation on quantum mechanics. You'll have to decode the regexes yourself." />
-  </a>
-  <figcaption><a href="https://xkcd.com/224/">"Lisp," xkcd #224</a>, by Randall Munroe. <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC BY-NC 2.5</a>.</figcaption>
-</figure>
+[![Lisp by Randall Munroe (xkcd #224): enlightenment and a universe hacked together with Perl.](/static/xkcd-lisp.jpg "Lisp by Randall Munroe (xkcd #224), CC BY-NC 2.5. We lost the documentation on quantum mechanics. You'll have to decode the regexes yourself.")](https://xkcd.com/224/)
 
 I've spent the last two years writing Python and trying to make software simpler. Sans I/O, protocols, adapters, dependency injection, type systems, keeping things DRY, all of it. I've also been interested in model-driven development, the BEAM, and finding better ways to express business logic without coupling everything together.
 
@@ -22,15 +17,19 @@ His points about types and tests being guardrails rather than actually making th
 
 Then I started looking at actual Clojure code. [Hiccup](https://github.com/weavejester/hiccup) represents HTML as vectors, [HoneySQL](https://github.com/seancorfield/honeysql) represents SQL as data, and [Malli](https://github.com/metosin/malli) does the same with schemas.
 
-[Pathom](https://pathom3.wsscode.com/) might be the coolest thing I've seen. You describe the data you want, and it figures out how to get it. Who cares if it comes from Postgres, HTTP, a file, or another process?
+[Pathom](https://pathom3.wsscode.com/) might be the coolest thing I've seen. You describe the data you want. Who cares if it comes from Postgres, HTTP, a file, or another process?
 
-Even [instructor-clj](https://github.com/unravel-team/instructor-clj) is ridiculously concise.
+You could be running a test or processing the most important data in production. The code using that data shouldn't need to know the difference.
 
-None of this is baked into Clojure. The language just makes it natural to represent things as ordinary data and compose functions around them.
+Hickey puts it well in [Simple Made Easy](https://www.youtube.com/watch?v=LKtk3HCgTa8&t=3014s):
 
-I think I finally had that [Lisp enlightenment](http://www.catb.org/~esr/faqs/hacker-howto.html) moment.
+> I don't know, I don't want to know.
+
+These are all libraries. The language just makes it natural to represent things as ordinary data and compose functions around them.
 
 The language itself is represented using the same kinds of data structures you're working with. I've understood code as data conceptually, but seeing what that actually enables is something else.
+
+I think I finally had that [Lisp enlightenment](http://www.catb.org/~esr/faqs/hacker-howto.html) moment.
 
 I used to think Lisp was unreadable and impractical because of all the parentheses. Now it's some of the most elegant code I've ever seen.
 

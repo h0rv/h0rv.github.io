@@ -2,6 +2,29 @@
 # kind: book | film | article | video | podcast | paper | post
 # Fields: date, kind, title, url; optional: by, note, quote
 
+- date: 2026-11-14
+  kind: video
+  title: "Simple Made Easy"
+  by: "Rich Hickey"
+  url: https://www.youtube.com/watch?v=LKtk3HCgTa8
+- date: 2026-11-14
+  kind: video
+  title: "Clojure, Made Simple"
+  by: "Rich Hickey"
+  url: https://www.youtube.com/watch?v=028LZLUB24s
+- date: 2026-11-14
+  kind: article
+  title: "Beating the Averages"
+  by: "Paul Graham"
+  url: https://paulgraham.com/avg.html
+  note: "Reread."
+- date: 2026-11-14
+  kind: article
+  title: "How To Become A Hacker"
+  by: "Eric S. Raymond"
+  url: http://www.catb.org/~esr/faqs/hacker-howto.html
+  note: "Reread."
+
 - date: 2026-10-31
   kind: podcast
   title: "Why Sam Altman is against a single superintelligence"

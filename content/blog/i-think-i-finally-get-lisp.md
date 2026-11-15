@@ -21,9 +21,18 @@ Then I started looking at actual Clojure code. [Hiccup](https://github.com/weave
 
 You could be running a test or processing the most important data in production. The code using that data shouldn't need to know the difference.
 
+I don't want deployment details leaking into application code either. AWS, GCP, serverless, queues, containers, and service boundaries shouldn't dictate how I write business logic. Moving that code between environments or deployments shouldn't mean rewriting what it does.
+
 Hickey puts it well in [Simple Made Easy](https://www.youtube.com/watch?v=LKtk3HCgTa8&t=3014s):
 
 > I don't know, I don't want to know.
+
+<figure class="slide-figure">
+  <a href="https://www.youtube.com/watch?v=SxdOUGdseq4&t=1896s">
+    <img src="/static/simple-made-easy-braid.webp" width="438" height="670" alt="Six diagrams show four independent strands becoming a tightly interwoven braid." />
+  </a>
+  <figcaption>Complecting independent concerns makes them harder to change separately. From Rich Hickey's <a href="https://www.infoq.com/presentations/Simple-Made-Easy/">Simple Made Easy</a>.</figcaption>
+</figure>
 
 These are all libraries. The language just makes it natural to represent things as ordinary data and compose functions around them.
 

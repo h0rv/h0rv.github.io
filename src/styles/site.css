@@ -349,6 +349,18 @@ h3.group-head {
   height: auto;
   border: var(--rule) solid var(--fg);
 }
+.prose .slide-figure {
+  margin: 1.5em 0;
+}
+.prose .slide-figure img {
+  margin-inline: auto;
+}
+.prose .slide-figure figcaption {
+  margin-top: 0.5em;
+  font-size: 0.75rem;
+  text-align: center;
+  opacity: 0.75;
+}
 .prose blockquote {
   margin-left: 0;
   padding-left: var(--gutter);

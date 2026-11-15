@@ -10,16 +10,19 @@ const projects = Astro.props.projects ?? (await getList("projects"));
 ---
 
 <ul class="rows">
-  {projects.map(({ data: p }) => (
-    <li class="link-row">
-      <span class="meta">{p.year}</span>
-      <a class="main" href={p.site ?? p.docs ?? p.repo} title={p.description}>{p.name}</a>
-      {(p.site || p.docs) && (
-        <span class="links mono">
+  {projects.map(({ data: p }) => {
+    const destination = p.site ?? p.docs ?? p.repo;
+    const domain = new URL(destination).hostname;
+    return (
+      <li class="link-row project-row">
+        <span class="meta">{p.year}</span>
+        <a class="main" href={destination} title={p.description}>{p.name}</a>
+        <span class="links mono project-links">
+          <a class="project-domain" href={destination} title={destination}>{domain} ↗</a>
           {p.site && p.docs && <a href={p.docs}>docs ↗</a>}
-          <a href={p.repo}>source</a>
+          {(p.site || p.docs) && <a href={p.repo}>source</a>}
         </span>
-      )}
-    </li>
-  ))}
+      </li>
+    );
+  })}
 </ul>

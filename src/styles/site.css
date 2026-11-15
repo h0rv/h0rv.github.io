@@ -272,12 +272,33 @@ a:hover {
   justify-content: flex-end;
   gap: 0 var(--gutter);
 }
+.link-row .project-links {
+  gap: 0 0.75em;
+}
+.project-row .main,
+.project-domain {
+  overflow-wrap: anywhere;
+}
 @media (max-width: 600px) {
+  .reading {
+    --gutter: 24px;
+  }
   .rows .link-row {
     grid-template-columns: var(--date-col) 1fr;
     row-gap: 0;
   }
   .link-row .links {
+    grid-column: 2;
+    justify-content: flex-start;
+  }
+}
+
+@container main (max-width: 680px) {
+  .rows .project-row {
+    grid-template-columns: var(--date-col) minmax(0, 1fr);
+    row-gap: 0;
+  }
+  .project-row .project-links {
     grid-column: 2;
     justify-content: flex-start;
   }
@@ -318,6 +339,18 @@ h3.group-head {
 .prose pre,
 .prose table {
   margin: 0 0 1em;
+}
+article .prose {
+  --measure: 65ch;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+article .prose > p {
+  margin-bottom: 1.15em;
+  text-wrap: pretty;
+}
+article .prose .slide-figure figcaption {
+  line-height: 1.4;
 }
 .prose h1,
 .prose h2,

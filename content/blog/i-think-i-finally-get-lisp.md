@@ -3,9 +3,12 @@ title: "I Think I Finally Get Lisp"
 date: 2026-11-15
 ---
 
-[![xkcd's Lisp comic about enlightenment and a universe hacked together with Perl](/static/xkcd-lisp.jpg "We lost the documentation on quantum mechanics. You'll have to decode the regexes yourself.")](https://xkcd.com/224/)
-
-*["Lisp," xkcd #224](https://xkcd.com/224/), by Randall Munroe. [CC BY-NC 2.5](https://creativecommons.org/licenses/by-nc/2.5/).*
+<figure>
+  <a href="https://xkcd.com/224/">
+    <img src="/static/xkcd-lisp.jpg" width="740" height="220" alt="xkcd's Lisp comic about enlightenment and a universe hacked together with Perl" title="We lost the documentation on quantum mechanics. You'll have to decode the regexes yourself." />
+  </a>
+  <figcaption><a href="https://xkcd.com/224/">"Lisp," xkcd #224</a>, by Randall Munroe. <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC BY-NC 2.5</a>.</figcaption>
+</figure>
 
 I've spent the last two years writing Python and trying to make software simpler. Sans I/O, protocols, adapters, dependency injection, type systems, keeping things DRY, all of it. I've also been interested in model-driven development, the BEAM, and finding better ways to express business logic without coupling everything together.
 

@@ -343,6 +343,14 @@ h3.group-head {
 .prose li + li {
   margin-top: 0.2em;
 }
+.prose figure {
+  margin: 0 0 1em;
+}
+.prose figcaption {
+  margin-top: 0.5em;
+  font-size: var(--small-size);
+  opacity: 0.75;
+}
 .prose img {
   display: block;
   max-width: 100%;

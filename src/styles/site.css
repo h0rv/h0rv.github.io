@@ -306,6 +306,7 @@ h3.group-head {
 .prose {
   padding: var(--gutter);
   max-width: min(var(--text-max), calc(var(--measure) + 2 * var(--gutter)));
+  text-align: left;
 }
 .prose > :first-child {
   margin-top: 0;
@@ -350,7 +351,7 @@ h3.group-head {
   border: var(--rule) solid var(--fg);
 }
 .prose:has(.slide-figure) {
-  display: flow-root;
+  position: relative;
 }
 .prose .slide-figure {
   width: min(160px, 100%);
@@ -358,6 +359,7 @@ h3.group-head {
 }
 .prose .slide-figure img {
   margin-inline: auto;
+  border: 0;
 }
 .prose .slide-figure figcaption {
   margin-top: 0.5em;
@@ -365,18 +367,20 @@ h3.group-head {
   text-align: center;
   opacity: 0.75;
 }
-@container main (min-width: 720px) {
+@container main (min-width: 960px) {
   .prose .slide-figure {
-    float: right;
-    margin: 0 0 1em 1.5em;
+    position: absolute;
+    left: calc(100% + 1em);
+    margin: 0;
   }
 }
 .prose blockquote {
   margin: 1.25em 0;
-  padding: 0;
-  border: 0;
-  font-style: italic;
-  font-synthesis: style;
+  padding: 0.25em 0 0.25em 1em;
+  border-left: var(--rule) solid var(--fg);
+}
+.prose blockquote > :last-child {
+  margin-bottom: 0;
 }
 .prose hr {
   border: 0;

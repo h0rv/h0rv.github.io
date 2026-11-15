@@ -34,15 +34,17 @@ Then there's [Pathom](https://pathom3.wsscode.com/), which is insane. You descri
 
 Having been a platform/DevOps engineer before, this is the part that got me. Whether we're on serverless, GCP, or AWS leaks into the code, and it shouldn't. It makes moving actual infrastructure hard, let alone moving modules of code from one service to another. Hickey has a line in [Simple Made Easy](https://www.youtube.com/watch?v=LKtk3HCgTa8&t=3014s) that I can't stop thinking about:
 
-> I don't know, I don't want to know.
+> "I don't know, I don't want to know."
+>
+> — [Rich Hickey](https://www.youtube.com/watch?v=LKtk3HCgTa8&t=3014s)
 
 It just makes complete sense.
 
 <figure class="slide-figure">
-  <a href="/static/simple-made-easy-braid.webp" title="View the full-size braid illustration">
-    <img src="/static/simple-made-easy-braid.webp" width="438" height="670" alt="Six diagrams show four independent strands becoming a tightly interwoven braid." />
+  <a href="/static/simple-made-easy-braid.webp?v=2" title="View the full-size braid illustration">
+    <img src="/static/simple-made-easy-braid.webp?v=2" width="410" height="634" alt="Six diagrams show four independent strands becoming a tightly interwoven braid." />
   </a>
-  <figcaption>Complecting independent concerns makes them harder to change separately. From Rich Hickey's <a href="https://www.infoq.com/presentations/Simple-Made-Easy/">Simple Made Easy</a>.</figcaption>
+  <figcaption>Complecting independent concerns makes them harder to change separately.<br />— <a href="https://www.infoq.com/presentations/Simple-Made-Easy/">Rich Hickey, Simple Made Easy</a></figcaption>
 </figure>
 
 None of this is baked into Clojure. It's all libraries, but because the language itself is data, extending it this way feels natural. Even static typing isn't built in. It could just be a library, which is so cool and makes complete sense. I've spent years finding patterns in Python to get some of this, and Clojure just inverts all of it. I've understood code as data and syntax trees for a while, but seeing what it enables is something else.

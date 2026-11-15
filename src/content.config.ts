@@ -54,9 +54,11 @@ const projects = defineCollection({
   schema: z.object({
     name: z.string(),
     year: z.number(),
+    category: z.enum(["Zig libraries", "Libraries and tools", "Sites and apps", "Learning and experiments"]),
     site: z.string().url().optional(),
+    docs: z.string().url().optional(),
     repo: z.string().url(),
-    description: z.string().nullish(),
+    description: z.string().min(1),
   }),
 });
 

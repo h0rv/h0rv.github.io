@@ -1,8 +1,16 @@
 ---
 import ProjectRows from "../components/ProjectRows.astro";
 import Base from "../layouts/Base.astro";
+import { getList } from "../lib/content";
+
+const categories = Map.groupBy(await getList("projects"), (project) => project.data.category);
 ---
 
 <Base title="Projects">
-  <ProjectRows />
+  {[...categories].map(([category, projects]) => (
+    <section class="group">
+      <h2 class="group-head">{category}</h2>
+      <ProjectRows projects={projects} />
+    </section>
+  ))}
 </Base>

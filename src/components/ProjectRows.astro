@@ -1,7 +1,12 @@
 ---
+import type { CollectionEntry } from "astro:content";
 import { getList } from "../lib/content";
 
-const projects = await getList("projects");
+interface Props {
+  projects?: CollectionEntry<"projects">[];
+}
+
+const projects = Astro.props.projects ?? (await getList("projects"));
 ---
 
 <ul class="rows">
@@ -9,11 +14,12 @@ const projects = await getList("projects");
     <li class="link-row">
       <span class="meta">{p.year}</span>
       <span>
-        <a class="main" href={p.site ?? p.repo}>{p.name}</a>
-        {p.description && <span class="desc">{p.description}</span>}
+        <a class="main" href={p.site ?? p.docs ?? p.repo}>{p.name}</a>
+        <span class="desc">{p.description}</span>
       </span>
       <span class="links mono">
         {p.site && <a href={p.site}>site ↗</a>}
+        {p.docs && <a href={p.docs}>docs ↗</a>}
         <a href={p.repo}>source</a>
       </span>
     </li>

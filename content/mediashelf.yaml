@@ -2,6 +2,12 @@
 # kind: book | film | article | video | podcast | paper | post
 # Fields: date, kind, title, url; optional: by, note, quote
 
+- date: 2026-11-15
+  kind: video
+  title: "Investigating The President"
+  by: "Coffeezilla"
+  url: https://www.youtube.com/watch?v=W4PIkmjwGsQ
+
 - date: 2026-11-14
   kind: video
   title: "Simple Made Easy"

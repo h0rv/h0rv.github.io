@@ -349,8 +349,12 @@ h3.group-head {
   height: auto;
   border: var(--rule) solid var(--fg);
 }
+.prose:has(.slide-figure) {
+  display: flow-root;
+}
 .prose .slide-figure {
-  margin: 1.5em 0;
+  width: min(160px, 100%);
+  margin: 1em auto;
 }
 .prose .slide-figure img {
   margin-inline: auto;
@@ -361,10 +365,18 @@ h3.group-head {
   text-align: center;
   opacity: 0.75;
 }
+@container main (min-width: 720px) {
+  .prose .slide-figure {
+    float: right;
+    margin: 0 0 1em 1.5em;
+  }
+}
 .prose blockquote {
-  margin-left: 0;
-  padding-left: var(--gutter);
-  border-left: var(--rule) solid var(--fg);
+  margin: 1.25em 0;
+  padding: 0;
+  border: 0;
+  font-style: italic;
+  font-synthesis: style;
 }
 .prose hr {
   border: 0;
